@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
    <head>
       <meta charset="utf-8">
@@ -12,6 +11,9 @@
          font-weight: 300;
          font-size: 15px;
          }
+          * {
+          box-sizing:border-box
+          }
          /*Navigation bar in all it's glory */
          nav {
          background-color: #CCF2F0;
@@ -46,6 +48,7 @@
          /*drop down from nav bar*/
          nav ul li div {
          background-color:#F9FEFE;
+         /*          #F5F2F0 */
          border-top: 5px;
          box-shadow: 2px 2px grey;
          display: none;
@@ -53,10 +56,6 @@
          position: absolute;
          width: 180px;
          transition: 0.2s;
-
-         z-index:999;
-
-         /* delay effect*/
          }
          nav ul li:hover div{
          transition: .3s;
@@ -67,8 +66,6 @@
          nav ul li div ul li {
          display: block;
          }
-
-         /* background for the drop down etc.. */
          nav ul li div ul li a {
          color: white;
          display: block;
@@ -77,48 +74,152 @@
          color:black;
          padding: 10px 10px;
          }
+         /* Cool scroll effect on airplane picture*/
+         .parallax {
+         background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
+         height: 400px;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
+         /* Cool scroll effect on sky picture*/
+         .parallax2 {
+         background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
+         height: 200px;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
 
-         /*the OR for btw phone and ticket help*/
+         /* Style the tab */
+         div.tab {
+         overflow: hidden;
+         border: 1px solid #A6CFCC;
+         background-color: #A6CFCC;
+         }
+         /* Style the tab content */
+         .tabcontent {
+         display: none;
+         padding: 10px 18px;
+         border: 5px solid #A6CFCC;
+         box-shadow: 10px 10px grey;
+         }
+         /* Style the buttons inside the tab
+         font-family: Arial;
+         */
+         div.tab button {
+         background-color: #A6CFCC;
+         float: left;
+         padding: 20px left;
+         transition: 0.3s;
+         font-size: 25px;
+         font-family:apple chancery;
+         }
+         /* Change background color of buttons on hover */
+         div.tab button:hover {
+         background-color: #BDEEEA;
+         color: white;
+         }
+         /* Create an active/current tablink class */
+         div.tab button.active {
+         background-color: #BDEEEA;
+         }
+         select {
+         margin: 50px;
+         border: 1px solid #111;
+         background: #7DBBBB;
+         width: 150px;
+         padding: 5px 35px 5px 5px;
+         font-size: 16px;
+         border: 1px solid #ccc;
+         height: 34px;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         appearance: none;
+         /*   background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee; */
+         }
+          /* Controls the Login Section */
+         .forms {
+         outline: #A6CFCC solid thick;
+         overflow: auto;
+         padding-top: 100;
+         }
+         /* login Stuff*/
+         #login{
+         float:left;
+         padding: 0px 200px;
+         }
+         /* 		Registration beautification  */
+         #registration{
+         padding: 0px 200px;
+         float:right;
+         }
+         /*the OR for btw reg or login*/
          .or {
          float:left;
          padding-left: 130px;
          }
 
-
+         /* login Stuff*/
+         #depart{
+         float:left;
+         padding: 0px 100px;
+         }
+         /* 		Registration beautification  */
+         #dest{
+         float:right;
+         padding: 0px 100px;
+         }
+         #plann{
+         text-align: center;
+         }
+		/*
+		top padding is 25px
+		right padding is 50px
+		bottom padding is 75px
+		left padding is 100px
+		*/
+         .arrow{
+         float:left;
+         padding: 0px 0px 0px 120px ;
+         overflow: hidden;
+         }
       </style>
    </head>
    <body>
-      <h1>GEOG4046</h1>
+      <h1>----</h1>
       <nav>
          <ul>
             <li>
                <a href="home.html">Home</a>
             </li>
             <li>
-               <a href="products.html">________</a>
+               <a href="products.html">Products</a>
                <div id="products">
                   <ul>
                      <li>
-                        <p><a href="products.html#bottomLinks">________</a>
+                        <p><a href="products.html#bottomLinks">---</a>
                      </li>
                      <li>
-                        <p><a href="Home.html#hotels">_______</a>
+                        <p><a href="#hotels">----</a>
                      </li>
                      <li>
-                        <p><a href="products.html#bottomLinks">________</a>
+                        <p><a href="products.html#bottomLinks">----</a>
                      </li>
                   </ul>
                </div>
             </li>
             <li>
                <a href="about.html">About us</a>
-               <div id="about">
+               <div id="About Us">
                   <ul>
                      <li>
-                        <p><a href="#executives">Executives</a></p>
+                        <p><a href="about.html#executives">----</a></p>
                      </li>
                      <li>
-                        <p><a href="#history">History</a>
+                        <p><a href="about.html#history">----</a>
                      </li>
                   </ul>
                </div>
@@ -128,13 +229,13 @@
                <div id="help">
                   <ul>
                      <li>
-                        <p><a href="#contact">Contact Us</a>
+                        <p><a href="help.html#contact">Contact Us</a>
                      </li>
                      <li>
-                        <p><a href="#help">_______</a>
+                        <p><a href="help.html#help">----</a>
                      </li>
                      <li>
-                        <p><a href="WorkingOnIt.html">OnlineHelp
+                        <p><a href="WorkingOnIt.html">O----
                            <font color="red"><em>(coming soon)</em></font></a>
                      </li>
                   </ul>
@@ -142,17 +243,382 @@
             </li>
          </ul>
       </nav>
-
       <p>
-         <h3>This type of assistance is not yet supported.
-          If you have had problems with AA, or you simply need to contact a representative
-           then please<h3>
-			<font size="6"><a href="help.html">click here</a></font>
+         Welcome to <strong>Advancement Airlines</strong> a better choice!
+         This fantastic new collaborative airlines company resides in the
+         newly built advanced HQ based in Texas. Though small, the company
+         is growing at a rapid rate with exciting rates, and state of the
+         art Engineering, IT and Computer Science technology developed in
+         the <em>Advancement Research Center of Austin, TX</em>.
       </p>
-      <br>
+      <div class="parallax"></div>
+      <div class="forms">
+         <form action="http://172.31.31.250/NAME" method="post">
+            <fieldset id ="login">
+               <legend>Login:</legend>
+               <label>Email:    <br>
+               <input name="Email" type="text">
+               </label>
+               <br>
+               <label>Password:<br>
+               <input name="Password" type="text">
+               </label>
+               <br>
+               <button type="submit">Login</button>
+            </fieldset>
+         </form>
+         <h2 class="or" > OR </h2>
+         <form action="http://172.31.31.250/NAME" method="post">
+            <fieldset id="registration">
+               <legend>Registration:</legend>
+               <label>Email:    <br>
+               <input name="Email" type="text">
+               </label>
+               <br>
+               <label>Password:	<br>
+               <input name="Password" type="text">
+               </label>
+               <br>
+               <button type="submit">Login</button>
+            </fieldset>
+         </form>
+      </div>
+      <p>   </p>
+      <!--        -->
+      <div class="tab">
+         <button class="tablinks" onclick="openFunction(event, 'flights')" id="defaultOpen">
+         Flights</button>
+         <button class="tablinks" onclick="openFunction(event, 'planning')">Hotel</button>
+         <button class="tablinks" onclick="openFunction(event, 'checkstatus')">
+         Check In and Status</button>
+      </div>
+      <!--        -->
+
+      <div id="flights" class="tabcontent">
+      <h3>Flights</h3>
+      <a name="hotels"></a>
+      <div class="forms">
+         <form action="http://172.31.31.250/Name" method="post">
+            <fieldset>
+               <label for="oneWay">One-way</label>
+               <input type="radio" name="flightfrequency" id="oneWay" value="oneWay">
+               <label for="twoWay">Two-way</label>
+               <input type="radio" name="flightfrequency" id="twoWay" value="twoWay">
+            </fieldset>
+            <fieldset id="depart">
+               <label id="dropDepart">
+                  <font size="4"><em>Departure:</em></font>
+                  <select name="location">
+                     <option value="newY">New York</option>
+                     <option value="losAng">Los Angeles</option>
+                     <option value="chig">Chicago</option>
+                     <option value="hous">Houston</option>
+                     <option value="phil">Philadelphia</option>
+                     <option value="Phoe">Phoenix</option>
+                     <option value="sanA">San Antonio</option>
+                     <option value="SanD">San Diego</option>
+                     <option value="dall">Dallas</option>
+                     <option value="sanJ">San Jose</option>
+                     <option value="aust">Austin</option>
+                     <option value="jackVil">JacksonVille</option>
+                     <option value="sanF">San Francisco</option>
+                     <option value="indian">Indianapolis</option>
+                     <option value="col">Columbus</option>
+                     <option value="fortW">Fort Worth</option>
+                     <option value="char">Charlotte</option>
+                     <option value="det">Detroit</option>
+                     <option value="elP">El Paso</option>
+                     <option value="seat">Seattle</option>
+                     <option value="den">Denver</option>
+                     <option value="wash">Washington DC</option>
+                     <option value="mem">Memphis</option>
+                     <option value="bos">Boston</option>
+                     <option value="nash">Nashville</option>
+                     <option value="balt">Baltimore</option>
+                     <option value="oak">Oklahoma</option>
+                     <option value="port">Portland</option>
+                     <option value="lasV">Las Vegas</option>
+                     <option value="louis">Louisville</option>
+                     <option value="mil">Milwaukee</option>
+                     <option value="alb">Albuquerque</option>
+                     <option value="tuc">Tucson</option>
+                     <option value="fres">Fresno</option>
+                     <option value="sacr">Sacramento</option>
+                     <option value="longB">Long Beach</option>
+                     <option value="kans">Kansas City</option>
+                     <option value="mes">Mesa</option>
+                     <option value="atl">Atlanta</option>
+                     <option value="virg">Virginia Beach</option>
+                     <option value="oma">Omaha</option>
+                     <option value="colo">Colorado Springs</option>
+                     <option value="ral">Raleigh</option>
+                     <option value="mia">Miami</option>
+                     <option value="oakl">Oakland</option>
+                     <option value="min">Minneapolis</option>
+                     <option value="tul">Tulsa</option>
+                     <option value="clev">Cleveland</option>
+                     <option value="wich">Wichita</option>
+                     <option value="newO">New Orleans</option>
+                     <option value="arl">Arlington</option>
+                     <option value="Cia">Cairo</option>
+                     <option value="jer">Jerusalem</option>
+                     <option value="mos">Moscow</option>
+                     <option value="lon">London</option>
+                     <option value="par">Paris</option>
+                     <option value="mad">Madrid</option>
+                     <option value="hong">Hong Kong</option>
+                     <option value="tok">Tokyo</option>
+                  </select>
+               </label>
+            </fieldset>
+<!--              -->
+            <div class="arrow"><p><font size="10">&rarr;</font><p>
+            </div>
+<!--              -->
+            <fieldset id="dest">
+               <label id="dropReturn">
+                  <font size="4"><em>Destination:</em></font>
+                  <select name="location">
+                     <option value="newY">New York</option>
+                     <option value="losAng">Los Angeles</option>
+                     <option value="chig">Chicago</option>
+                     <option value="hous">Houston</option>
+                     <option value="phil">Philadelphia</option>
+                     <option value="Phoe">Phoenix</option>
+                     <option value="sanA">San Antonio</option>
+                     <option value="SanD">San Diego</option>
+                     <option value="dall">Dallas</option>
+                     <option value="sanJ">San Jose</option>
+                     <option value="aust">Austin</option>
+                     <option value="jackVil">JacksonVille</option>
+                     <option value="sanF">San Francisco</option>
+                     <option value="indian">Indianapolis</option>
+                     <option value="col">Columbus</option>
+                     <option value="fortW">Fort Worth</option>
+                     <option value="char">Charlotte</option>
+                     <option value="det">Detroit</option>
+                     <option value="elP">El Paso</option>
+                     <option value="seat">Seattle</option>
+                     <option value="den">Denver</option>
+                     <option value="wash">Washington DC</option>
+                     <option value="mem">Memphis</option>
+                     <option value="bos">Boston</option>
+                     <option value="nash">Nashville</option>
+                     <option value="balt">Baltimore</option>
+                     <option value="oak">Oklahoma</option>
+                     <option value="port">Portland</option>
+                     <option value="lasV">Las Vegas</option>
+                     <option value="louis">Louisville</option>
+                     <option value="mil">Milwaukee</option>
+                     <option value="alb">Albuquerque</option>
+                     <option value="tuc">Tucson</option>
+                     <option value="fres">Fresno</option>
+                     <option value="sacr">Sacramento</option>
+                     <option value="longB">Long Beach</option>
+                     <option value="kans">Kansas City</option>
+                     <option value="mes">Mesa</option>
+                     <option value="atl">Atlanta</option>
+                     <option value="virg">Virginia Beach</option>
+                     <option value="oma">Omaha</option>
+                     <option value="colo">Colorado Springs</option>
+                     <option value="ral">Raleigh</option>
+                     <option value="mia">Miami</option>
+                     <option value="oakl">Oakland</option>
+                     <option value="min">Minneapolis</option>
+                     <option value="tul">Tulsa</option>
+                     <option value="clev">Cleveland</option>
+                     <option value="wich">Wichita</option>
+                     <option value="newO">New Orleans</option>
+                     <option value="arl">Arlington</option>
+                     <option value="Cia">Cairo</option>
+                     <option value="jer">Jerusalem</option>
+                     <option value="mos">Moscow</option>
+                     <option value="lon">London</option>
+                     <option value="par">Paris</option>
+                     <option value="mad">Madrid</option>
+                     <option value="hong">Hong Kong</option>
+                     <option value="tok">Tokyo</option>
+                  </select>
+               </label>
+            </fieldset>
+            </div>
+            <br>
+            <label>Name: <input name="name" type="text"></label>
+            <br>
+            <label>Email: <input name="email" type="email"></label>
+            <br>
+            <button type="submit">Buy Tickets</button>
+         </form>
+       </div>
+
+
+      <div id="planning" class="tabcontent">
+         <h3>Car and Hotel Services</h3>
+         <div class="forms">
+         <form action="http://172.31.31.250/NAME" method="post">
+            <fieldset id="plann">
+               <label>
+<!--                   <legend>Hotel and car services:</legend> -->
+                  <select name="location">
+                     <option value="newY">New York</option>
+                     <option value="losAng">Los Angeles</option>
+                     <option value="chig">Chicago</option>
+                     <option value="hous">Houston</option>
+                     <option value="phil">Philadelphia</option>
+                     <option value="Phoe">Phoenix</option>
+                     <option value="SanD">San Diego</option>
+                     <option value="dall">Dallas</option>
+                     <option value="col">Columbus</option>
+                     <option value="fortW">Fort Worth</option>
+                     <option value="char">Charlotte</option>
+                     <option value="det">Detroit</option>
+                     <option value="elP">El Paso</option>
+                     <option value="bos">Boston</option>
+                     <option value="nash">Nashville</option>
+                     <option value="balt">Baltimore</option>
+                     <option value="oak">Oklahoma</option>
+                     <option value="port">Portland</option>
+                     <option value="tuc">Tucson</option>
+                     <option value="fres">Fresno</option>
+                     <option value="sacr">Sacramento</option>
+                     <option value="longB">Long Beach</option>
+                     <option value="kans">Kansas City</option>
+                     <option value="mes">Mesa</option>
+                     <option value="colo">Colorado Springs</option>
+                     <option value="ral">Raleigh</option>
+                     <option value="mia">Miami</option>
+                     <option value="oakl">Oakland</option>
+                     <option value="newO">New Orleans</option>
+                     <option value="jer">Jerusalem</option>
+                     <option value="lon">London</option>
+                     <option value="par">Paris</option>
+                  </select>
+               </label>
+            </fieldset>
+            </div>
+            <br>
+            <p>Note:This is not intended to be a long term housing solutions nor do we at
+            Advancement airlines support longterm vacation hotels. This service is
+            designed for long wait times, unexpected changes in plans, and
+            emergencies.</p>
+
+            <label>Name: <input name="name" type="text"></label>
+            <br>
+            <label>Email: <input name="email" type="email"></label>
+            <br>
+            <button type="submit">Rent</button>
+         </form>
+         <br>
+      </div>
+
+      <div id="checkstatus" class="tabcontent">
+         <h3>Check In and Status</h3>
+
+         <form action="http://172.31.31.250/HelloWorldServlet/HelloWorldEnhanced" method="post">
+         <div class="forms">
+            <label>
+               Location:
+               <select name="location">
+                  <option value="newY">New York</option>
+                     <option value="losAng">Los Angeles</option>
+                     <option value="chig">Chicago</option>
+                     <option value="hous">Houston</option>
+                     <option value="phil">Philadelphia</option>
+                     <option value="Phoe">Phoenix</option>
+                     <option value="sanA">San Antonio</option>
+                     <option value="SanD">San Diego</option>
+                     <option value="dall">Dallas</option>
+                     <option value="sanJ">San Jose</option>
+                     <option value="aust">Austin</option>
+                     <option value="jackVil">JacksonVille</option>
+                     <option value="sanF">San Francisco</option>
+                     <option value="indian">Indianapolis</option>
+                     <option value="col">Columbus</option>
+                     <option value="fortW">Fort Worth</option>
+                     <option value="char">Charlotte</option>
+                     <option value="det">Detroit</option>
+                     <option value="elP">El Paso</option>
+                     <option value="seat">Seattle</option>
+                     <option value="den">Denver</option>
+                     <option value="wash">Washington DC</option>
+                     <option value="mem">Memphis</option>
+                     <option value="bos">Boston</option>
+                     <option value="nash">Nashville</option>
+                     <option value="balt">Baltimore</option>
+                     <option value="oak">Oklahoma</option>
+                     <option value="port">Portland</option>
+                     <option value="lasV">Las Vegas</option>
+                     <option value="louis">Louisville</option>
+                     <option value="mil">Milwaukee</option>
+                     <option value="alb">Albuquerque</option>
+                     <option value="tuc">Tucson</option>
+                     <option value="fres">Fresno</option>
+                     <option value="sacr">Sacramento</option>
+                     <option value="longB">Long Beach</option>
+                     <option value="kans">Kansas City</option>
+                     <option value="mes">Mesa</option>
+                     <option value="atl">Atlanta</option>
+                     <option value="virg">Virginia Beach</option>
+                     <option value="oma">Omaha</option>
+                     <option value="colo">Colorado Springs</option>
+                     <option value="ral">Raleigh</option>
+                     <option value="mia">Miami</option>
+                     <option value="oakl">Oakland</option>
+                     <option value="min">Minneapolis</option>
+                     <option value="tul">Tulsa</option>
+                     <option value="clev">Cleveland</option>
+                     <option value="wich">Wichita</option>
+                     <option value="newO">New Orleans</option>
+                     <option value="arl">Arlington</option>
+                     <option value="Cia">Cairo</option>
+                     <option value="jer">Jerusalem</option>
+                     <option value="mos">Moscow</option>
+                     <option value="lon">London</option>
+                     <option value="par">Paris</option>
+                     <option value="mad">Madrid</option>
+                     <option value="hong">Hong Kong</option>
+                     <option value="tok">Tokyo</option>
+               </select>
+            </label>
+            <br>
+            <label>Experience:
+            <br>
+            <textarea name="experience" placeholder="Please let us know how you found the advancement airlines ticket, hotel, and check-in process." rows="10" cols="100" maxlength="2000">
+            </textarea>
+            </label>
+            </div>
+            <br>
+            <label>Name: <input name="name" type="text"></label>
+            <br>
+            <label>Email: <input name="email" type="email"></label>
+            <br>
+            <button type="submit">Check In</button>
+         </form>
+         <br>
+      </div>
+      <script>
+         function openFunction(evt, funcName) {
+             var i, tabcontent, tablinks;
+             tabcontent = document.getElementsByClassName("tabcontent");
+             for (i = 0; i < tabcontent.length; i++) {
+                 tabcontent[i].style.display = "none";
+             }
+             tablinks = document.getElementsByClassName("tablinks");
+             for (i = 0; i < tablinks.length; i++) {
+                 tablinks[i].className = tablinks[i].className.replace(" active", "");
+             }
+             document.getElementById(funcName).style.display = "block";
+             evt.currentTarget.className += "active";
+         }
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("defaultOpen").click();
+      </script>
       <!--        -->
       <br>
-      <div id="bottomLinks">
+      <div class="parallax2"></div>
+
+      <br>
+      <div class="bottomLinks">
          <a href="http://twitter.com/girldevelopit">Twitter</a>
          |
          <a href="http://www.facebook.com/girldevelopit">Facebook</a>
