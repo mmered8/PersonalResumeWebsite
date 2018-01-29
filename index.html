@@ -1,10 +1,164 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>GEOG 4046</title>
-  </head>
-  <body>
-    <h1>GEOG 4046</h1>
-    <p> This is the first Assignment for coding 1 and software 1.</p>
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <title>GEOG4046</title>
+      <style>
+         /*body stylizing stuff */
+         body {
+         background-color: #E4EFF0;
+         color: black;
+         font-weight: 300;
+         font-size: 15px;
+         }
+         /*Navigation bar in all it's glory */
+         nav {
+         background-color: #CCF2F0;
+         border: 5px;
+         border-radius: 5px;
+         box-shadow: 5px 5px grey;
+         color: black;
+         overflow: hidden;
+         text-align:center;
+         width: 99%;
+         }
+         /* top buttons words about,home,etc.. meant to flatten the list */
+         nav ul li {
+         display: inline-block;
+         }
+         /*  top buttons words about,home,etc.. */
+         nav ul li a {
+         color: black;
+         font-family:Arial Black;
+         font-size: 20px;
+         display: block;
+         line-height: 30px;
+         padding-left: 100px;
+         padding-right: 100px;
+         text-decoration: none;
+         }
+         /*For hover over top menu bar */
+         nav ul li a:hover {
+         transition: .3s;
+         color: grey;
+         }
+         /*drop down from nav bar*/
+         nav ul li div {
+         background-color:#F9FEFE;
+         border-top: 5px;
+         box-shadow: 2px 2px grey;
+         display: none;
+         margin-left: 50px;
+         position: absolute;
+         width: 180px;
+         transition: 0.2s;
+
+         z-index:999;
+
+         /* delay effect*/
+         }
+         nav ul li:hover div{
+         transition: .3s;
+         display: block;
+         color: #ECE8E8;
+         }
+         /*virtual display for drop down*/
+         nav ul li div ul li {
+         display: block;
+         }
+
+         /* background for the drop down etc.. */
+         nav ul li div ul li a {
+         color: white;
+         display: block;
+         width: 25px;
+         text-decoration: none;
+         color:black;
+         padding: 10px 10px;
+         }
+
+         /*the OR for btw phone and ticket help*/
+         .or {
+         float:left;
+         padding-left: 130px;
+         }
+
+
+      </style>
+   </head>
+   <body>
+      <h1>GEOG4046</h1>
+      <nav>
+         <ul>
+            <li>
+               <a href="home.html">Home</a>
+            </li>
+            <li>
+               <a href="products.html">________</a>
+               <div id="products">
+                  <ul>
+                     <li>
+                        <p><a href="products.html#bottomLinks">________</a>
+                     </li>
+                     <li>
+                        <p><a href="Home.html#hotels">_______</a>
+                     </li>
+                     <li>
+                        <p><a href="products.html#bottomLinks">________</a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <a href="about.html">About us</a>
+               <div id="about">
+                  <ul>
+                     <li>
+                        <p><a href="#executives">Executives</a></p>
+                     </li>
+                     <li>
+                        <p><a href="#history">History</a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <a href="help.html">Help</a>
+               <div id="help">
+                  <ul>
+                     <li>
+                        <p><a href="#contact">Contact Us</a>
+                     </li>
+                     <li>
+                        <p><a href="#help">_______</a>
+                     </li>
+                     <li>
+                        <p><a href="WorkingOnIt.html">OnlineHelp
+                           <font color="red"><em>(coming soon)</em></font></a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+         </ul>
+      </nav>
+
+      <p>
+         <h3>This type of assistance is not yet supported.
+          If you have had problems with AA, or you simply need to contact a representative
+           then please<h3>
+			<font size="6"><a href="help.html">click here</a></font>
+      </p>
+      <br>
+      <!--        -->
+      <br>
+      <div id="bottomLinks">
+         <a href="http://twitter.com/girldevelopit">Twitter</a>
+         |
+         <a href="http://www.facebook.com/girldevelopit">Facebook</a>
+         |
+         <a href="http://www.flickr.com/photos/40453677@N00/sets/72157626841092971/">
+         Flickr</a>
+      </div>
+   </body>
 </html>
