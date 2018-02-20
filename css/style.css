@@ -1,0 +1,184 @@
+<style>
+   /*body stylizing stuff */
+   body {
+   background-color: #E4EFF0;
+   color: black;
+   font-weight: 300;
+   font-size: 15px;
+   }
+    * {
+    box-sizing:border-box
+    }
+   /*Navigation bar in all it's glory */
+   nav {
+   background-color: #CCF2F0;
+   border: 5px;
+   border-radius: 5px;
+   box-shadow: 5px 5px grey;
+   color: black;
+   overflow: hidden;
+   text-align:center;
+   width: 99%;
+   }
+   /* top buttons words about,home,etc.. meant to flatten the list */
+   nav ul li {
+   display: inline-block;
+   }
+   /*  top buttons words about,home,etc.. */
+   nav ul li a {
+   color: black;
+   font-family:Arial Black;
+   font-size: 20px;
+   display: block;
+   line-height: 30px;
+   padding-left: 100px;
+   padding-right: 100px;
+   text-decoration: none;
+   }
+   /*For hover over top menu bar */
+   nav ul li a:hover {
+   transition: .3s;
+   color: grey;
+   }
+   /*drop down from nav bar*/
+   nav ul li div {
+   background-color:#F9FEFE;
+   /*          #F5F2F0 */
+   border-top: 5px;
+   box-shadow: 2px 2px grey;
+   display: none;
+   margin-left: 50px;
+   position: absolute;
+   width: 180px;
+   transition: 0.2s;
+   }
+   nav ul li:hover div{
+   transition: .3s;
+   display: block;
+   color: #ECE8E8;
+   }
+   /*virtual display for drop down*/
+   nav ul li div ul li {
+   display: block;
+   }
+   nav ul li div ul li a {
+   color: white;
+   display: block;
+   width: 25px;
+   text-decoration: none;
+   color:black;
+   padding: 10px 10px;
+   }
+   /* Cool scroll effect on airplane picture*/
+   .parallax {
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
+   height: 400px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+   /* Cool scroll effect on sky picture*/
+   .parallax2 {
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
+   height: 200px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+
+   /* Style the tab */
+   div.tab {
+   overflow: hidden;
+   border: 1px solid #A6CFCC;
+   background-color: #A6CFCC;
+   }
+   /* Style the tab content */
+   .tabcontent {
+   display: none;
+   padding: 10px 18px;
+   border: 5px solid #A6CFCC;
+   box-shadow: 10px 10px grey;
+   }
+   /* Style the buttons inside the tab
+   font-family: Arial;
+   */
+   div.tab button {
+   background-color: #A6CFCC;
+   float: left;
+   padding: 20px left;
+   transition: 0.3s;
+   font-size: 25px;
+   font-family:apple chancery;
+   }
+   /* Change background color of buttons on hover */
+   div.tab button:hover {
+   background-color: #BDEEEA;
+   color: white;
+   }
+   /* Create an active/current tablink class */
+   div.tab button.active {
+   background-color: #BDEEEA;
+   }
+   select {
+   margin: 50px;
+   border: 1px solid #111;
+   background: #7DBBBB;
+   width: 150px;
+   padding: 5px 35px 5px 5px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   height: 34px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   /*   background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee; */
+   }
+    /* Controls the Login Section */
+   .forms {
+   outline: #A6CFCC solid thick;
+   overflow: auto;
+   padding-top: 100;
+   }
+   /* login Stuff*/
+   #login{
+   float:left;
+   padding: 0px 200px;
+   }
+   /* 		Registration beautification  */
+   #registration{
+   padding: 0px 200px;
+   float:right;
+   }
+   /*the OR for btw reg or login*/
+   .or {
+   float:left;
+   padding-left: 130px;
+   }
+
+   /* login Stuff*/
+   #depart{
+   float:left;
+   padding: 0px 100px;
+   }
+   /* 		Registration beautification  */
+   #dest{
+   float:right;
+   padding: 0px 100px;
+   }
+   #plann{
+   text-align: center;
+   }
+/*
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px
+*/
+   .arrow{
+   float:left;
+   padding: 0px 0px 0px 120px ;
+   overflow: hidden;
+   }
+</style>
