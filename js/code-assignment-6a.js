@@ -36,12 +36,12 @@ function createImageSrc(i){
 loopAndLog()
 {
   for (let i = 0; i < projects.length; i++) {
-    createTitle(i)
-    createImageSrc(i)
+    let title = createTitle(i)
+    let image = createImageSrc(i)
+    console.log(title);
+    console.log(image);
   }
 }
-
-
 // Describes Fruit
 function describeFruit (fruit) {
   let description = 'The ' + fruit + ' is a delicious snack.'
