@@ -150,7 +150,8 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
  max-width: 1000px;
- position: relative;
+ position: absolute;
+ border-style: double;
  margin: auto;
 }
 
@@ -222,4 +223,4 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
  .prev, .next,.text {font-size: 11px}
-}  
+}
