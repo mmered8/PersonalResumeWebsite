@@ -15,9 +15,14 @@ projects[2] = {
   thumb: true,
   keywords: ['Baton Rouge', 'Mall']
 }
-for (let i = 0; i < projects.length; i++) {
-  // log the current project's title
-  console.log('Index positon ' + i + ' title: ' + projects[i].title)
+
+
+function createTitle(i)
+{
+  console.log('Index position ' + i + 'title: ' + projects[i].title)
+}
+
+function createImageSrc(i){
   // build and log an image file name based on the project ID
   if (projects[i].thumb === true){
     console.log('images/' + projects[i].id + '.png')
@@ -27,6 +32,17 @@ for (let i = 0; i < projects.length; i++) {
   }
 }
 
+
+loopAndLog()
+{
+  for (let i = 0; i < projects.length; i++) {
+    createTitle(i)
+    createImageSrc(i)
+  }
+}
+
+
+// Describes Fruit
 function describeFruit (fruit) {
   let description = 'The ' + fruit + ' is a delicious snack.'
   return description
