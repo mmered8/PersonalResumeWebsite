@@ -7,7 +7,7 @@ projects[1] = {
   thumb: true,
   keywords: ['REdlands', 'California', 'story map', 'arcgis online']
 }
-project[2] = {
+projects[2] = {
   id: 2,
   url: 'https://www.arcgis.com/apps/MapTour/index.html?appid=34dab67ae97e4a12a4611f53ccc0566f',
   title: 'Mall',
