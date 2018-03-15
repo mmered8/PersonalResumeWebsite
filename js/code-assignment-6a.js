@@ -16,7 +16,7 @@ projects[2] = {
   keywords:['Baton Rouge', 'Mall']
 }
 function createTitle(i){
-  console.log('Index position ' + i + 'title: ' + projects[i].title)
+  console.log('Index position ' + i + 'title: ' + projects[i].title + '')
 }
 function createImageSrc(i){
   // build and log an image file name based on the project ID
