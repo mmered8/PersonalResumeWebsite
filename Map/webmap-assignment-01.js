@@ -7,3 +7,4 @@ let polygon = L.polygon([
   [51.503, -0.06],
   [51.51, -0.047]
 ]).addTo(mymap);
+ 
