@@ -5,23 +5,23 @@ let currentMap = L.map('mapid').setView([51.505, -0.09], 13)
 //L.tileLayer('mapURl').addTo(currentMap)
 
 L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(currentMap)
-let point = L.marker([51.5, -0.09]).addTo(currentMap)
+let point = L.marker([30.41662, 268.838024]).addTo(currentMap)
 let polygon = L.polygon([
-  [51.51, -0.10],
-  [51.502, -0.07],
-  [51.509, -0.048]
+  [30.407147, 268.834989],
+  [30.413809, 268.841684],
+  [30.421803, 268.829067],
 ]).addTo(currentMap);
 
 var latitudeLongitude = [
-  [51.59, -0.1],
-  [51.53, -0.16],
-  [51.501, -0.07]
+  [30.40241, 268.830697],
+  [30.423876, 268.826492],
+  [30.41788, 268.844087]
 ]
 var polyline = L.polyline(latitudeLongitude, {color: 'red'}).addTo(currentMap);
 currentMap.fitBounds(polyline.getBounds());
 
-polygon.bindPopup('St. Katharine\'s and Wapping')
-point.bindPopup('London Bridge Station')
+polygon.bindPopup('LSU LAKES')
+point.bindPopup('CANOE RENTAL')
 
 currentMap.on('click', function (event) {
   console.log('You clicked the map at ' + event.latlng)
