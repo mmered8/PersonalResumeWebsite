@@ -29,6 +29,6 @@ function map4 () {
     style: myStyle,
     onEachFeature: myPopup
   }
-  L.geoJSON(stateDemo, myOptions).addTo(mymap)
+  L.geoJSON(stateDemographics, myOptions).addTo(mymap)
 }
 map4()
