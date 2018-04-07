@@ -1,4 +1,6 @@
-#mapid { height: 500px }
+#mapid { height: 300px }
 body {
     background-color: lightblue;
 }
+
+#mapid2 { height: 300px }
