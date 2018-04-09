@@ -1,6 +1,6 @@
 let currentMap = L.map('mapid').setView([51.505, -0.09], 13)
 
-L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(currentMap)
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}').addTo(currentMap)
 
 let myIcon = L.icon({
   iconUrl: 'CanoeYellow.png',
