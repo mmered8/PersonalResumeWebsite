@@ -3,7 +3,7 @@ let currentMap = L.map('mapid').setView([51.505, -0.09], 13)
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}').addTo(currentMap)
 
 let myIcon = L.icon({
-  iconUrl: 'CanoeYellow.png',
+  iconUrl: 'YellowSquare.jpg',
   iconSize: [35, 60], // size of the icon
   iconAnchor: [21, 93], // point of the icon which will correspond to marker's location
   popupAnchor: [-2, -75] // point from which the popup should open relative to the iconAnchor
@@ -28,9 +28,9 @@ let myCoords = [
 let polygon = L.polygon(myCoords, myStyle).addTo(currentMap);
 
 var latitudeLongitude = [
-  [30.40241, 268.830697],
+  [30.41788, 268.844087],
   [30.423876, 268.826492],
-  [30.41788, 268.844087]
+  [30.40241, 268.830697]
 ]
 var polyline = L.polyline(latitudeLongitude, {color: 'red'}).addTo(currentMap);
 currentMap.fitBounds(polyline.getBounds());
