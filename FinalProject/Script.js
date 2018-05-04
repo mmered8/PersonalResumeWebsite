@@ -17,6 +17,42 @@ let basemaps = {
  }
  L.control.layers(basemaps).addTo(newMap)
 
+ function createCustomIcon(feature, latlng)
+ {
+   let myIcon = L.icon({
+     iconUrl: 'star.png',
+     iconSize: [35, 60], // size of the icon
+     iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+     popupAnchor: [-10, -10] // point from which the popup should open relative to the iconAnchor
+   })
+   // if (crime>300 && crime <600  ) {
+   //   myIcon=L.icon({
+   //     iconUrl: 'yellowCircle.png',
+   //     iconSize: [35, 60], // size of the icon
+   //     iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+   //     popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
+   //   })
+   // }
+   // else if(crime>600 && crime <800) {
+   //   myIcon=L.icon({
+   //     iconUrl: 'OrangeCircle.png',
+   //     iconSize: [35, 60], // size of the icon
+   //     iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+   //     popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
+   //   })
+   // }
+   // else if(crime >800 ){
+   //   myIcon=L.icon({
+   //     iconUrl: 'badStar.png',
+   //     iconSize: [35, 60], // size of the icon
+   //     iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+   //     popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
+   //   })
+   // }
+
+   return L.marker(latlng, { icon: myIcon })
+ }
+
  function myStyle (feature) {
    let crime = feature.properties.CRIME
    let color = 'green'
@@ -56,47 +92,14 @@ let basemaps = {
    theWorstBest(feature,layer);
  }
 
- function pickIcon(feature, latlng)
- {
-   let myIcon = L.icon({
-     iconUrl: 'star.png',
-     iconSize: [35, 60], // size of the icon
-     iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-     popupAnchor: [-100, -100] // point from which the popup should open relative to the iconAnchor
-   })
-   if (crime>300 && crime <600  ) {
-     myIcon=L.icon({
-       iconUrl: 'yellowCircle.png',
-       iconSize: [35, 60], // size of the icon
-       iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-       popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
-     })
-   }
-   else if(crime>600 && crime <800) {
-     myIcon=L.icon({
-       iconUrl: 'OrangeCircle.png',
-       iconSize: [35, 60], // size of the icon
-       iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-       popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
-     })
-   }
-   else if(crime >800 ){
-     myIcon=L.icon({
-       iconUrl: 'badStar.png',
-       iconSize: [35, 60], // size of the icon
-       iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-       popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
-     })
-   }
 
-   return L.marker(latlng, { icon: myIcon })
- }
 
   let mapOptions = {
     style: myStyle,
     onEachFeature: myPopup,
-    pointToLayer: pickIcon
+    pointToLayer: createCustomIcon
   }
   L.geoJSON(stateDemographics, mapOptions).addTo(newMap)
+
 }
 map();
