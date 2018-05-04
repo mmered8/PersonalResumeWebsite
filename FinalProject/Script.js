@@ -6,13 +6,13 @@ newMap.on('click', function (event) {
 })
 
 let lightMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(newMap)
-let darkMap = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png')
-let soilMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png')
+let roadMap = L.tileLayer('https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}')
+let topoMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')
 
 let basemaps = {
    'Light basemap': lightMap,
-   'Dark basemap': darkMap,
-   'Soil basemap': soilMap
+   'Road baseMap': roadMap,
+   'Topo basemap': topoMap
  }
 
  L.control.layers(basemaps).addTo(newMap)
@@ -39,6 +39,6 @@ let basemaps = {
     style: mapStyle,
     onEachFeature: mapPopup
   }
-  L.geoJSON(convert, mapOptions).addTo(newMap)
+  L.geoJSON(Crime.json, mapOptions).addTo(newMap)
 }
 map()
