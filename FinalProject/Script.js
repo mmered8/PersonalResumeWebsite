@@ -51,17 +51,38 @@ let basemaps = {
 
  function myPopup (feature, layer) {
    let name = feature.properties.STATE_NAME
-   let population = feature.properties.POPULATION
-   layer.bindPopup('Median population of ' + name + ': ' + population + '<br>National average per state: ~6,514,000 million')
-   theWorst(feature,layer);
+   let Crime = feature.properties.CRIME
+   layer.bindPopup('Per Capita(crime per 100,000) for ' + name + ': ' + Crime + '<br> National average: ~420')
+   theWorstBest(feature,layer);
  }
 
-
+ function myIcon(feature, layer)
+ {
+   let name = feature.properties.STATE_NAME
+   let crime = feature.properties.CRIME
+   let myIcon = L.icon({
+     iconUrl: 'star.jpg',
+     iconSize: [35, 60], // size of the icon
+     iconAnchor: [21, 93], // point of the icon which will correspond to marker's location
+     popupAnchor: [-2, -75] // point from which the popup should open relative to the iconAnchor
+   })
+   if (crime>300 && crime <600  ) {
+     myIcon.iconUrl = 'yellowCircle.png'
+   }
+   else if(crime>600 && crime <800) {
+     myIcon.iconUrl = 'OrangeCircle.png'
+   }
+   else if(crime >800 ){
+     myIcon.iconUrl = 'badStar.png'
+   }
+   // return Layer.marker([50.457504, -69.169922], {icon: myIcon});
+   layer.marker([45.706179, -80.244141], {icon: myIcon});
+ }
 
   let mapOptions = {
     style: myStyle,
-    onEachFeature: myPopup
-
+    onEachFeature: myPopup,
+    marker: myIcon
   }
   L.geoJSON(stateDemographics, mapOptions).addTo(newMap)
 }
