@@ -18,10 +18,15 @@ let basemaps = {
  L.control.layers(basemaps).addTo(newMap)
 
  function myStyle (feature) {
-   let population = feature.properties.POPULATION
-   let color = 'blue'
-   if (population < 6514000) {
-     color = 'red'
+   let crime = feature.properties.CRIME
+   let color = 'green'
+   if (crime>300 && crime <600  ) {
+     color = 'orange'
+   }
+   else if(crime>600) {
+     {
+       color ='red'
+     }
    }
    let myStyle = {
      color: color,
@@ -31,14 +36,32 @@ let basemaps = {
    return myStyle
  }
 
+ function theWorstBest(feature, layer)
+ {
+   let name = feature.properties.STATE_NAME
+   let crime = feature.properties.CRIME
+   if(crime==804.2)
+   {
+     layer.bindPopup('The great state of ' + name + ': WORST violent crime rate of' + crime + '.<br> Worst of all states and territories!')
+   }else if(crime==123.8)
+   {
+     layer.bindPopup('The great state of ' + name + ': BEST violent crime rate of' + crime + '.<br> Best of all states and territories!')
+   }
+ }
+
  function myPopup (feature, layer) {
    let name = feature.properties.STATE_NAME
    let population = feature.properties.POPULATION
    layer.bindPopup('Median population of ' + name + ': ' + population + '<br>National average per state: ~6,514,000 million')
+   theWorst(feature,layer);
  }
+
+
+
   let mapOptions = {
     style: myStyle,
     onEachFeature: myPopup
+
   }
   L.geoJSON(stateDemographics, mapOptions).addTo(newMap)
 }
