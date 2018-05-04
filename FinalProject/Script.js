@@ -17,13 +17,33 @@ let basemaps = {
  }
  L.control.layers(basemaps).addTo(newMap)
 
+ function myStyle (feature) {
+   let crime = feature.properties.CRIME
+   let color = 'green'
+   if (crime>300 && crime <600  ) {
+     color = 'orange'
+   }
+   else if(crime>600) {
+     {
+       color ='red'
+     }
+   }
+   let myStyle = {
+     color: color,
+     weight: 1,
+     fillOpacity: 0.2
+   }
+   return myStyle
+ }
+
  function createCustomIcon(feature, latlng)
  {
+   // let crime = feature.properties.CRIME;
    let myIcon = L.icon({
-     iconUrl: 'star.png',
+     iconUrl: 'badStar.png',
      iconSize: [35, 60], // size of the icon
      iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-     popupAnchor: [-10, -10] // point from which the popup should open relative to the iconAnchor
+     popupAnchor: [-100, -100] // point from which the popup should open relative to the iconAnchor
    })
    // if (crime>300 && crime <600  ) {
    //   myIcon=L.icon({
@@ -51,25 +71,6 @@ let basemaps = {
    // }
 
    return L.marker(latlng, { icon: myIcon })
- }
-
- function myStyle (feature) {
-   let crime = feature.properties.CRIME
-   let color = 'green'
-   if (crime>300 && crime <600  ) {
-     color = 'orange'
-   }
-   else if(crime>600) {
-     {
-       color ='red'
-     }
-   }
-   let myStyle = {
-     color: color,
-     weight: 1,
-     fillOpacity: 0.2
-   }
-   return myStyle
  }
 
  function theWorstBest(feature, layer)
