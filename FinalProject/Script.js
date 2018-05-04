@@ -4,6 +4,7 @@ function map() {
 let newMap = L.map('mapid').setView([41, -101], 4)
 newMap.on('click', function (event) {
   console.log('You clicked the map at ' + event.latlng)
+
 })
 
 let lightMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(newMap);
@@ -36,9 +37,10 @@ let basemaps = {
    return myStyle
  }
 
- function createCustomIcon(feature, latlng)
+ function createCustomIcon(feature, latlong)
  {
    // let crime = feature.properties.CRIME;
+   let latlngg = latlong;
    let myIcon = L.icon({
      iconUrl: 'badStar.png',
      iconSize: [35, 60], // size of the icon
@@ -70,7 +72,7 @@ let basemaps = {
    //   })
    // }
 
-   return L.marker(latlng, { icon: myIcon })
+   return L.marker(latlngg, { icon: myIcon })
  }
 
  function theWorstBest(feature, layer)
@@ -79,10 +81,10 @@ let basemaps = {
    let crime = feature.properties.CRIME
    if(crime==804.2)
    {
-     layer.bindPopup('The great state of ' + name + ': WORST violent crime rate of' + crime + '.<br> Worst of all states and territories!')
+     layer.bindPopup('The great state of ' + name + ': WORST violent crime rate of ' + crime + '.<br> Worst of all states and territories!')
    }else if(crime==123.8)
    {
-     layer.bindPopup('The great state of ' + name + ': BEST violent crime rate of' + crime + '.<br> Best of all states and territories!')
+     layer.bindPopup('The great state of ' + name + ': BEST violent crime rate of ' + crime + '.<br> Best of all states and territories!')
    }
  }
 
