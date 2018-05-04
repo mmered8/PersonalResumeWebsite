@@ -1,2096 +1,1693 @@
-let Crime = {
+let Crime ={
    "type":"FeatureCollection",
    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
    "features":[
       {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.76457628,
+               35.829905957
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"WOODLAND POND DR",
+            "radio":"Everything,Last Year",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D1",
+            "phxrecordstatus":null,
+            "lon":-78.76457628,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"WEDNESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"SAS",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135543700,
+            "map_reference":"P029",
+            "date_to":"06\/21\/2017",
+            "lat":35.829905957,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"111",
+            "record":28848,
+            "incident_number":"17005487",
+            "apartment_complex":null,
+            "date_from":"2017-06-17"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.74677936,
+               35.768682083
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"JAMIE CT",
+            "radio":"Everything,Last Year",
+            "time_to":-62135515734,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":"Active",
+            "lon":-78.74677936,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"SATURDAY",
+            "phxstatus":"Active",
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"THE RESERVE AT MAGNOLIA RIDGE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135515735,
+            "map_reference":"P083",
+            "date_to":"08\/19\/2017",
+            "lat":35.768682083,
+            "phxcommunity":"Yes",
+            "crime_category":"ALL OTHER",
+            "activity_date":"03JAN2011",
+            "beat_number":"112",
+            "record":29094,
+            "incident_number":"17007119",
+            "apartment_complex":"THE RESERVE AT MAGNOLIA RIDGE",
+            "date_from":"2017-08-19"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.80763251,
+               35.785833567
+            ]
+         },
          "type":"Feature",
          "properties":{
-            "FILE NUMBER":"1600000630",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2200",
-            "CRIME":"VEHICLE BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/AUTO $50 - $200",
-            "ADDRESS":"330  INGLESIDE DR",
-            "ST NUMBER":"330",
-            "ST DIR":"",
-            "ST NAME":"INGLESIDE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"2B1",
-            "GEOMETRY":"30.445245, -91.145384"
-         },
-         "geometry":{ "type": "Point", "coordinates": [30.445245, -91.145384] }
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000566",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2300",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"4043 N FOSTER DR",
-            "ST NUMBER":"4043",
-            "ST DIR":"N",
-            "ST NAME":"FOSTER",
-            "ST TYPE":"DR",
-            "DISTRICT":"1",
-            "ZONE":"F",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1F1",
-            "GEOMETRY":"30.486856, -91.140343"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.486856, -91.140343]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000323",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1621",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BATT/SIMPLE",
-            "ADDRESS":"9215  HIGH POINT RD",
-            "ST NUMBER":"9215",
-            "ST DIR":"",
-            "ST NAME":"HIGH POINT",
-            "ST TYPE":"RD",
-            "DISTRICT":"2",
-            "ZONE":"E",
-            "SUBZONE":"4",
-            "COMPLETE DISTRICT":"2.00E+04",
-            "GEOMETRY":"30.372622, -91.116511"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.372622, -91.116511]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000303",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1540",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"678  BAIRD DR",
-            "ST NUMBER":"678",
-            "ST DIR":"",
-            "ST NAME":"BAIRD",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"E",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"2.00E+03",
-            "GEOMETRY":"30.381061, -91.123002"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.381061, -91.123002]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000128",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"221",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"DOMESTIC ABUSE BATTERY/CC",
-            "ADDRESS":"1732  ROBIN ST",
-            "ST NUMBER":"1732",
-            "ST DIR":"",
-            "ST NAME":"ROBIN",
-            "ST TYPE":"ST",
-            "DISTRICT":"4",
-            "ZONE":"B",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4B1",
-            "GEOMETRY":"30.525446, -91.175074"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.525446, -91.175074]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000416",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2004",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"2428  GERMANTOWN DR",
-            "ST NUMBER":"2428",
-            "ST DIR":"",
-            "ST NAME":"GERMANTOWN",
-            "ST TYPE":"DR",
-            "DISTRICT":"",
-            "ZONE":"",
-            "SUBZONE":"",
-            "COMPLETE DISTRICT":"",
-            "GEOMETRY":"30.42048, -91.129602"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.42048, -91.129602]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000111",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"212",
-            "CRIME":"ASSAULT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ASSAULT/AGG/CC",
-            "ADDRESS":"1201  GOVERNMENT ST",
-            "ST NUMBER":"1201",
-            "ST DIR":"",
-            "ST NAME":"GOVERNMENT",
-            "ST TYPE":"ST",
-            "DISTRICT":"2",
-            "ZONE":"A",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2A2",
-            "GEOMETRY":"30.443614, -91.176333"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.443614, -91.176333]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000211",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1038",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE",
-            "ADDRESS":"2191 N REDONDO DR",
-            "ST NUMBER":"2191",
-            "ST DIR":"N",
-            "ST NAME":"REDONDO",
-            "ST TYPE":"DR",
-            "DISTRICT":"3",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"3B2",
-            "GEOMETRY":"30.469422, -91.083436"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.469422, -91.083436]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000289",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1522",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"UNAU USE OF MOTOR VEHICLE",
-            "ADDRESS":"5700  GREENWELL ST",
-            "ST NUMBER":"5700",
-            "ST DIR":"",
-            "ST NAME":"GREENWELL",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"E",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1.00E+01",
-            "GEOMETRY":"30.502301, -91.133488"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.502301, -91.133488]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000165",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"420",
-            "CRIME":"NON-RESIDENTIAL BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURGLARY/SIMPLE",
-            "ADDRESS":"4383  NICHOLSON DR",
-            "ST NUMBER":"4383",
-            "ST DIR":"",
-            "ST NAME":"NICHOLSON",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"C",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2C2",
-            "GEOMETRY":"30.396924, -91.17815"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.396924, -91.17815]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600009666",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1337",
-            "CRIME":"NON-RESIDENTIAL BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURGLARY/SIMPLE",
-            "ADDRESS":"1531  MATILDA ST",
-            "ST NUMBER":"1531",
-            "ST DIR":"",
-            "ST NAME":"MATILDA",
-            "ST TYPE":"ST",
-            "DISTRICT":"2",
-            "ZONE":"D",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"2D1",
-            "GEOMETRY":"30.435829, -91.17254"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.435829, -91.17254]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600002578",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2200",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"1464 N 29TH ST",
-            "ST NUMBER":"1464",
-            "ST DIR":"N",
-            "ST NAME":"29TH",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"B",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1B1",
-            "GEOMETRY":"30.462088, -91.159516"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.462088, -91.159516]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000347",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1752",
-            "CRIME":"NUISANCE",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"LOUD MUSIC FROM VEHICLE",
-            "ADDRESS":"4343  DENHAM ST",
-            "ST NUMBER":"4343",
-            "ST DIR":"",
-            "ST NAME":"DENHAM",
-            "ST TYPE":"ST",
-            "DISTRICT":"4",
-            "ZONE":"F",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4F1",
-            "GEOMETRY":"30.504485, -91.149301"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.504485, -91.149301]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600006525",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1615",
-            "CRIME":"NON-RESIDENTIAL BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURGLARY/SIMPLE",
-            "ADDRESS":"4100  GERONIMO ST",
-            "ST NUMBER":"4100",
-            "ST DIR":"",
-            "ST NAME":"GERONIMO",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"E",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1.00E+01",
-            "GEOMETRY":"30.486832, -91.161971"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.486832, -91.161971]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000338",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1649",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BATT/AGG KNIFE",
-            "ADDRESS":"760 N DONMOOR AV",
-            "ST NUMBER":"760",
-            "ST DIR":"N",
-            "ST NAME":"DONMOOR",
-            "ST TYPE":"AV",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1D1",
-            "GEOMETRY":"30.456426, -91.118539"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.456426, -91.118539]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600124590",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1700",
-            "CRIME":"NUISANCE",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ENT/REM AFTER FORB/CC",
-            "ADDRESS":"8800  SCENIC HW",
-            "ST NUMBER":"8800",
-            "ST DIR":"",
-            "ST NAME":"SCENIC",
-            "ST TYPE":"HW",
-            "DISTRICT":"4",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4A1",
-            "GEOMETRY":"30.526718, -91.182766"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.526718, -91.182766]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1500127779",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2120",
-            "CRIME":"FIREARM",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ROBBERY/FIREARM - ADDITIONAL PENALTIES",
-            "ADDRESS":"3209  IVANHOE ST",
-            "ST NUMBER":"3209",
-            "ST DIR":"",
-            "ST NAME":"IVANHOE",
-            "ST TYPE":"ST",
-            "DISTRICT":"2",
-            "ZONE":"D",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"2D1",
-            "GEOMETRY":"30.418665, -91.174135"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.418665, -91.174135]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000261",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1350",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BATT/SIMPLE/CC",
-            "ADDRESS":"2250  FLORIDA BL",
-            "ST NUMBER":"2250",
-            "ST DIR":"",
-            "ST NAME":"FLORIDA",
-            "ST TYPE":"BL",
-            "DISTRICT":"2",
-            "ZONE":"A",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2A2",
-            "GEOMETRY":"30.450012, -91.164854"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.450012, -91.164854]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000577",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1500",
-            "CRIME":"RESIDENTIAL BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/S/INH DWEL RES UNK FORCE",
-            "ADDRESS":"5175  UNDERWOOD AV",
-            "ST NUMBER":"5175",
-            "ST DIR":"",
-            "ST NAME":"UNDERWOOD",
-            "ST TYPE":"AV",
-            "DISTRICT":"1",
-            "ZONE":"C",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"1C3",
-            "GEOMETRY":"30.473955, -91.138351"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.473955, -91.138351]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000119",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"350  3RD ST",
-            "ST NUMBER":"350",
-            "ST DIR":"",
-            "ST NAME":"3RD",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1A1",
-            "GEOMETRY":"30.450076, -91.188296"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.450076, -91.188296]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000322",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1622",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/MISD/SHOPLIFTING/CC",
-            "ADDRESS":"5758  ESSEN LN",
-            "ST NUMBER":"5758",
-            "ST DIR":"",
-            "ST NAME":"ESSEN",
-            "ST TYPE":"LN",
-            "DISTRICT":"2",
-            "ZONE":"E",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"2.00E+03",
-            "GEOMETRY":"30.397178, -91.108312"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.397178, -91.108312]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1700075479",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"825",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"INSURANCE FRAUD - HEALTH CARE",
-            "ADDRESS":"9000  AIRLINE HW",
-            "ST NUMBER":"9000",
-            "ST DIR":"",
-            "ST NAME":"AIRLINE",
-            "ST TYPE":"HW",
-            "DISTRICT":"3",
-            "ZONE":"G",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"3G1",
-            "GEOMETRY":"30.444488, -91.089941"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.444488, -91.089941]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000118",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"201",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OF MOTOR VEHICLE",
-            "ADDRESS":"860  BELHAVEN TRACE DR",
-            "ST NUMBER":"860",
-            "ST DIR":"",
-            "ST NAME":"BELHAVEN TRACE",
-            "ST TYPE":"DR",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1D2",
-            "GEOMETRY":"30.45735, -91.108611"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.45735, -91.108611]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000081",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"115",
-            "CRIME":"NARCOTICS",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"POSS MARIJUANA/CC",
-            "ADDRESS":"13950 S HARRELL'S FERRY RD",
-            "ST NUMBER":"13950",
-            "ST DIR":"S",
-            "ST NAME":"HARRELL'S FERRY",
-            "ST TYPE":"RD",
-            "DISTRICT":"",
-            "ZONE":"",
-            "SUBZONE":"",
-            "COMPLETE DISTRICT":"",
-            "GEOMETRY":"30.430343, -91.027625"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.430343, -91.027625]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000227",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1111",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OF GOODS",
-            "ADDRESS":"5151  PLANK RD",
-            "ST NUMBER":"5151",
-            "ST DIR":"",
-            "ST NAME":"PLANK",
-            "ST TYPE":"RD",
-            "DISTRICT":"4",
-            "ZONE":"E",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4.00E+01",
-            "GEOMETRY":"30.495304, -91.154617"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.495304, -91.154617]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600091534",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/MISD/CC",
-            "ADDRESS":"11111 N HARRELL'S FERRY RD",
-            "ST NUMBER":"11111",
-            "ST DIR":"N",
-            "ST NAME":"HARRELL'S FERRY",
-            "ST TYPE":"RD",
-            "DISTRICT":"3",
-            "ZONE":"E",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"3.00E+02",
-            "GEOMETRY":"30.432817, -91.060468"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.432817, -91.060468]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000232",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1110",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT $50-$200 SHOPLIFTING",
-            "ADDRESS":"3887  PLANK RD",
-            "ST NUMBER":"3887",
-            "ST DIR":"",
-            "ST NAME":"PLANK",
-            "ST TYPE":"RD",
-            "DISTRICT":"1",
-            "ZONE":"E",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1.00E+02",
-            "GEOMETRY":"30.484663, -91.15837"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.484663, -91.15837]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000321",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1627",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OF GOODS",
-            "ADDRESS":"6401  BLUEBONNET BL",
-            "ST NUMBER":"6401",
-            "ST DIR":"",
-            "ST NAME":"BLUEBONNET",
-            "ST TYPE":"BL",
-            "DISTRICT":"",
-            "ZONE":"",
-            "SUBZONE":"",
-            "COMPLETE DISTRICT":"",
-            "GEOMETRY":"30.392517, -91.090116"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.392517, -91.090116]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000393",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1925",
-            "CRIME":"ASSAULT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"DOMESTIC ABUSE BATTERY",
-            "ADDRESS":"750  HARDING BL",
-            "ST NUMBER":"750",
-            "ST DIR":"",
-            "ST NAME":"HARDING",
-            "ST TYPE":"BL",
-            "DISTRICT":"4",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4A1",
-            "GEOMETRY":"30.520294, -91.186485"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.520294, -91.186485]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000118",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"201",
-            "CRIME":"ASSAULT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"DOMESTIC ABUSE BATTERY",
-            "ADDRESS":"860  BELHAVEN TRACE DR",
-            "ST NUMBER":"860",
-            "ST DIR":"",
-            "ST NAME":"BELHAVEN TRACE",
-            "ST TYPE":"DR",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1D2",
-            "GEOMETRY":"30.45735, -91.108611"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.45735, -91.108611]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000393",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1925",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"DOMESTIC ABUSE BATT",
-            "ADDRESS":"750  HARDING BL",
-            "ST NUMBER":"750",
-            "ST DIR":"",
-            "ST NAME":"HARDING",
-            "ST TYPE":"BL",
-            "DISTRICT":"4",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4A1",
-            "GEOMETRY":"30.520294, -91.186485"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.520294, -91.186485]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000118",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"201",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE",
-            "ADDRESS":"860  BELHAVEN TRACE DR",
-            "ST NUMBER":"860",
-            "ST DIR":"",
-            "ST NAME":"BELHAVEN TRACE",
-            "ST TYPE":"DR",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1D2",
-            "GEOMETRY":"30.45735, -91.108611"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.45735, -91.108611]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000579",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1400",
-            "CRIME":"RESIDENTIAL BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/S/INH DWEL RES UNK FORCE",
-            "ADDRESS":"5177  UNDERWOOD AV",
-            "ST NUMBER":"5177",
-            "ST DIR":"",
-            "ST NAME":"UNDERWOOD",
-            "ST TYPE":"AV",
-            "DISTRICT":"1",
-            "ZONE":"C",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"1C3",
-            "GEOMETRY":"30.473959, -91.138147"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.473959, -91.138147]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000081",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"111",
-            "CRIME":"NUISANCE",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"TRESPASSING ON BREC PARKS",
-            "ADDRESS":"13950 S HARRELL'S FERRY RD",
-            "ST NUMBER":"13950",
-            "ST DIR":"S",
-            "ST NAME":"HARRELL'S FERRY",
-            "ST TYPE":"RD",
-            "DISTRICT":"",
-            "ZONE":"",
-            "SUBZONE":"",
-            "COMPLETE DISTRICT":"",
-            "GEOMETRY":"30.430343, -91.027625"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.430343, -91.027625]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600012053",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1500",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"2403  BRIGHTSIDE DR",
-            "ST NUMBER":"2403",
-            "ST DIR":"",
-            "ST NAME":"BRIGHTSIDE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"C",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"2C3",
-            "GEOMETRY":"30.388747, -91.186299"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.388747, -91.186299]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000382",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1920",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT UU ACCESS CARD $50-$200",
-            "ADDRESS":"956  CENTRAL RD",
-            "ST NUMBER":"956",
-            "ST DIR":"",
-            "ST NAME":"CENTRAL",
-            "ST TYPE":"RD",
-            "DISTRICT":"4",
-            "ZONE":"A",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"4A2",
-            "GEOMETRY":"30.534539, -91.184162"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.534539, -91.184162]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600010861",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OF A FIREARM",
-            "ADDRESS":"4105  PERKINS RD",
-            "ST NUMBER":"4105",
-            "ST DIR":"",
-            "ST NAME":"PERKINS",
-            "ST TYPE":"RD",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2B2",
-            "GEOMETRY":"30.418688, -91.147977"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.418688, -91.147977]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000384",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1903",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"4400  BAWELL ST",
-            "ST NUMBER":"4400",
-            "ST DIR":"",
-            "ST NAME":"BAWELL",
-            "ST TYPE":"ST",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2B2",
-            "GEOMETRY":"30.427478, -91.14412"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.427478, -91.14412]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000136",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"230",
-            "CRIME":"BUSINESS ROBBERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ROBB/1ST DEGREE",
-            "ADDRESS":"2901  COLLEGE DR",
-            "ST NUMBER":"2901",
-            "ST DIR":"",
-            "ST NAME":"COLLEGE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"2B3",
-            "GEOMETRY":"30.421489, -91.140329"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.421489, -91.140329]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000226",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1117",
-            "CRIME":"INDIVIDUAL ROBBERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ROBB/FIREARM RESIDENCE",
-            "ADDRESS":"1050 N ARDENWOOD DR",
-            "ST NUMBER":"1050",
-            "ST DIR":"N",
-            "ST NAME":"ARDENWOOD",
-            "ST TYPE":"DR",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1D1",
-            "GEOMETRY":"30.459638, -91.127697"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.459638, -91.127697]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000208",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"3416  OZARK ST",
-            "ST NUMBER":"3416",
-            "ST DIR":"",
-            "ST NAME":"OZARK",
-            "ST TYPE":"ST",
-            "DISTRICT":"",
-            "ZONE":"",
-            "SUBZONE":"",
-            "COMPLETE DISTRICT":"",
-            "GEOMETRY":"30.479476, -91.155502"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.479476, -91.155502]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000204",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"943",
-            "CRIME":"NUISANCE",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM MISCHIEF/CC",
-            "ADDRESS":"4605  UNDERWOOD AV",
-            "ST NUMBER":"4605",
-            "ST DIR":"",
-            "ST NAME":"UNDERWOOD",
-            "ST TYPE":"AV",
-            "DISTRICT":"1",
-            "ZONE":"C",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"1C3",
-            "GEOMETRY":"30.473948, -91.143597"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.473948, -91.143597]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600024252",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/IDENTITY",
-            "ADDRESS":"1685  INGLESIDE DR",
-            "ST NUMBER":"1685",
-            "ST DIR":"",
-            "ST NAME":"INGLESIDE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2B2",
-            "GEOMETRY":"30.433634, -91.145042"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.433634, -91.145042]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000261",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1350",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"2250  FLORIDA BL",
-            "ST NUMBER":"2250",
-            "ST DIR":"",
-            "ST NAME":"FLORIDA",
-            "ST TYPE":"BL",
-            "DISTRICT":"2",
-            "ZONE":"A",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2A2",
-            "GEOMETRY":"30.450012, -91.164854"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.450012, -91.164854]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000161",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"400",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"DOMESTIC ABUSE BATTERY/CC",
-            "ADDRESS":"8926  TALLYHO AV",
-            "ST NUMBER":"8926",
-            "ST DIR":"",
-            "ST NAME":"TALLYHO",
-            "ST TYPE":"AV",
-            "DISTRICT":"3",
-            "ZONE":"G",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"3G1",
-            "GEOMETRY":"30.435811, -91.090341"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.435811, -91.090341]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600011196",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"830",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"1855  BLVD DE PROVINCE BL",
-            "ST NUMBER":"1855",
-            "ST DIR":"",
-            "ST NAME":"BLVD DE PROVINCE",
-            "ST TYPE":"BL",
-            "DISTRICT":"3",
-            "ZONE":"E",
-            "SUBZONE":"5",
-            "COMPLETE DISTRICT":"3.00E+05",
-            "GEOMETRY":"30.436782, -91.045671"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.436782, -91.045671]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000230",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"BUSINESS ROBBERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ROBBERY/2ND DEGREE",
-            "ADDRESS":"700 N 17TH ST",
-            "ST NUMBER":"700",
-            "ST DIR":"N",
-            "ST NAME":"17TH",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1A1",
-            "GEOMETRY":"30.452969, -91.171887"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.452969, -91.171887]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000610",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1800",
-            "CRIME":"VEHICLE BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/AUTO $50 - $200",
-            "ADDRESS":"675  WOODDALE BL",
-            "ST NUMBER":"675",
-            "ST DIR":"",
-            "ST NAME":"WOODDALE",
-            "ST TYPE":"BL",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1D2",
-            "GEOMETRY":"30.455946, -91.106924"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.455946, -91.106924]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000702",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2100",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BATT/SIMPLE/CC",
-            "ADDRESS":"2385  COLLEGE DR",
-            "ST NUMBER":"2385",
-            "ST DIR":"",
-            "ST NAME":"COLLEGE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2B2",
-            "GEOMETRY":"30.426235, -91.137519"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.426235, -91.137519]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000573",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2000",
-            "CRIME":"VEHICLE BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/AUTO OVER $200",
-            "ADDRESS":"12645  WARWICK AV",
-            "ST NUMBER":"12645",
-            "ST DIR":"",
-            "ST NAME":"WARWICK",
-            "ST TYPE":"AV",
-            "DISTRICT":"3",
-            "ZONE":"E",
-            "SUBZONE":"4",
-            "COMPLETE DISTRICT":"3.00E+04",
-            "GEOMETRY":"30.444393, -91.041473"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.444393, -91.041473]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000207",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1011",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"3030  JULY ST",
-            "ST NUMBER":"3030",
-            "ST DIR":"",
-            "ST NAME":"JULY",
-            "ST TYPE":"ST",
-            "DISTRICT":"",
-            "ZONE":"",
-            "SUBZONE":"",
-            "COMPLETE DISTRICT":"",
-            "GEOMETRY":"30.420426, -91.173297"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.420426, -91.173297]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600013375",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/IDENTITY",
-            "ADDRESS":"2055 N AIRWAY DR",
-            "ST NUMBER":"2055",
-            "ST DIR":"N",
-            "ST NAME":"AIRWAY",
-            "ST TYPE":"DR",
-            "DISTRICT":"",
-            "ZONE":"",
-            "SUBZONE":"",
-            "COMPLETE DISTRICT":"",
-            "GEOMETRY":"30.466963, -91.098683"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.466963, -91.098683]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000124",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"245",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/MISD/SHOPLIFTING/CC",
-            "ADDRESS":"5035  GOVERNMENT ST",
-            "ST NUMBER":"5035",
-            "ST DIR":"",
-            "ST NAME":"GOVERNMENT",
-            "ST TYPE":"ST",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"2B1",
-            "GEOMETRY":"30.44456, -91.137977"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.44456, -91.137977]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000293",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1425",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"5455  BEECHWOOD DR",
-            "ST NUMBER":"5455",
-            "ST DIR":"",
-            "ST NAME":"BEECHWOOD",
-            "ST TYPE":"DR",
-            "DISTRICT":"4",
-            "ZONE":"F",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4F1",
-            "GEOMETRY":"30.499021, -91.144167"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.499021, -91.144167]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000011",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"5",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"2350  SWEETLEAF ST",
-            "ST NUMBER":"2350",
-            "ST DIR":"",
-            "ST NAME":"SWEETLEAF",
-            "ST TYPE":"ST",
-            "DISTRICT":"3",
-            "ZONE":"C",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"3C3",
-            "GEOMETRY":"30.429872, -91.067707"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.429872, -91.067707]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600004502",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1200",
-            "CRIME":"ASSAULT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ASSAULT/SIMPLE/CC",
-            "ADDRESS":"10877  SANDRINGHAM AV",
-            "ST NUMBER":"10877",
-            "ST DIR":"",
-            "ST NAME":"SANDRINGHAM",
-            "ST TYPE":"AV",
-            "DISTRICT":"3",
-            "ZONE":"E",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"3.00E+01",
-            "GEOMETRY":"30.450289, -91.06298"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.450289, -91.06298]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000330",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1627",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/AGG",
-            "ADDRESS":"3347 N 38TH ST",
-            "ST NUMBER":"3347",
-            "ST DIR":"N",
-            "ST NAME":"38TH",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"F",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1F1",
-            "GEOMETRY":"30.479096, -91.152882"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.479096, -91.152882]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000569",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"145",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"214  THIRD ST",
-            "ST NUMBER":"214",
-            "ST DIR":"",
-            "ST NAME":"THIRD",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1A1",
-            "GEOMETRY":"30.448604, -91.188218"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.448604, -91.188218]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000460",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1900",
-            "CRIME":"RESIDENTIAL BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/SID/ RES NIGHT NO FORCE",
-            "ADDRESS":"2010  BIRCH ST",
-            "ST NUMBER":"2010",
-            "ST DIR":"",
-            "ST NAME":"BIRCH",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"A",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1A2",
-            "GEOMETRY":"30.463306, -91.168608"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.463306, -91.168608]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000075",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"100",
-            "CRIME":"NUISANCE",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ENT/REM AFTER FORB/CC",
-            "ADDRESS":"102  MAYFLOWER ST",
-            "ST NUMBER":"102",
-            "ST DIR":"",
-            "ST NAME":"MAYFLOWER",
-            "ST TYPE":"ST",
-            "DISTRICT":"2",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"2A1",
-            "GEOMETRY":"30.440725, -91.188658"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.440725, -91.188658]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600019337",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OF MOTOR VEHICLE",
-            "ADDRESS":"11455  AIRLINE HW",
-            "ST NUMBER":"11455",
-            "ST DIR":"",
-            "ST NAME":"AIRLINE",
-            "ST TYPE":"HW",
-            "DISTRICT":"3",
-            "ZONE":"F",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"3F3",
-            "GEOMETRY":"30.398255, -91.053128"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.398255, -91.053128]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000329",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1634",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE",
-            "ADDRESS":"9756  OLYMPIC AV",
-            "ST NUMBER":"9756",
-            "ST DIR":"",
-            "ST NAME":"OLYMPIC",
-            "ST TYPE":"AV",
-            "DISTRICT":"3",
-            "ZONE":"A",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"3A2",
-            "GEOMETRY":"30.480914, -91.076917"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.480914, -91.076917]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000318",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1625",
-            "CRIME":"NARCOTICS",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"POSS OF SCHEDULE 2 DRUGS",
-            "ADDRESS":"9700  AVE E AV",
-            "ST NUMBER":"9700",
-            "ST DIR":"",
-            "ST NAME":"AVE E",
-            "ST TYPE":"AV",
-            "DISTRICT":"4",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4A1",
-            "GEOMETRY":"30.532733, -91.194049"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.532733, -91.194049]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600011515",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"NON-RESIDENTIAL BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/S NON RES UNK NO FORCE",
-            "ADDRESS":"5500  FLORIDA BL",
-            "ST NUMBER":"5500",
-            "ST DIR":"",
-            "ST NAME":"FLORIDA",
-            "ST TYPE":"BL",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"2B1",
-            "GEOMETRY":"30.450946, -91.133327"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.450946, -91.133327]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000259",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1335",
-            "CRIME":"RESIDENTIAL BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/S RES DAY FORCE",
-            "ADDRESS":"5641 N AFTON PK",
-            "ST NUMBER":"5641",
-            "ST DIR":"N",
-            "ST NAME":"AFTON",
-            "ST TYPE":"PK",
-            "DISTRICT":"1",
-            "ZONE":"C",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1C1",
-            "GEOMETRY":"30.459326, -91.131995"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.459326, -91.131995]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600039769",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1",
-            "CRIME":"FIREARM",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"DISCHARGE FIREARMS/CC",
-            "ADDRESS":"1600  POCAHONTAS ST",
-            "ST NUMBER":"1600",
-            "ST DIR":"",
-            "ST NAME":"POCAHONTAS",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"B",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1B1",
-            "GEOMETRY":"30.462272, -91.166865"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.462272, -91.166865]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600018943",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1505",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"12414  LAKE LABELLE CR",
-            "ST NUMBER":"12414",
-            "ST DIR":"",
-            "ST NAME":"LAKE LABELLE",
-            "ST TYPE":"CR",
-            "DISTRICT":"3",
-            "ZONE":"F",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"3F2",
-            "GEOMETRY":"30.412634, -91.043046"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.412634, -91.043046]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000412",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1954",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"DOMESTIC ABUSE BATTERY/CC",
-            "ADDRESS":"10064  ELM GROVE GARDEN DR",
-            "ST NUMBER":"10064",
-            "ST DIR":"",
-            "ST NAME":"ELM GROVE GARDEN",
-            "ST TYPE":"DR",
-            "DISTRICT":"4",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"4B2",
-            "GEOMETRY":"30.536516, -91.169454"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.536516, -91.169454]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000357",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1731",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OTHER MOTOR VEHICLE",
-            "ADDRESS":"1931  PLANK RD",
-            "ST NUMBER":"1931",
-            "ST DIR":"",
-            "ST NAME":"PLANK",
-            "ST TYPE":"RD",
-            "DISTRICT":"1",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1B2",
-            "GEOMETRY":"30.464966, -91.1653"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.464966, -91.1653]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000519",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2300",
-            "CRIME":"FIREARM",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ROBBERY/FIREARM - ADDITIONAL PENALTIES",
-            "ADDRESS":"6763  VAN GOGH AV",
-            "ST NUMBER":"6763",
-            "ST DIR":"",
-            "ST NAME":"VAN GOGH",
-            "ST TYPE":"AV",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1D1",
-            "GEOMETRY":"30.454997, -91.121446"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.454997, -91.121446]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000111",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"212",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE/CC",
-            "ADDRESS":"1201  GOVERNMENT ST",
-            "ST NUMBER":"1201",
-            "ST DIR":"",
-            "ST NAME":"GOVERNMENT",
-            "ST TYPE":"ST",
-            "DISTRICT":"2",
-            "ZONE":"A",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2A2",
-            "GEOMETRY":"30.443614, -91.176333"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.443614, -91.176333]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000396",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1928",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/MISD/CC",
-            "ADDRESS":"2340 S SHERWOOD FOREST BL",
-            "ST NUMBER":"2340",
-            "ST DIR":"S",
-            "ST NAME":"SHERWOOD FOREST",
-            "ST TYPE":"BL",
-            "DISTRICT":"3",
-            "ZONE":"E",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"3.00E+02",
-            "GEOMETRY":"30.431366, -91.057087"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.431366, -91.057087]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000138",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"20",
-            "CRIME":"VEHICLE BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/AUTO OVER $200",
-            "ADDRESS":"2139  NEBRASKA ST",
-            "ST NUMBER":"2139",
-            "ST DIR":"",
-            "ST NAME":"NEBRASKA",
-            "ST TYPE":"ST",
-            "DISTRICT":"3",
-            "ZONE":"D",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"3D2",
-            "GEOMETRY":"30.427442, -91.179854"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.427442, -91.179854]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600001650",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1715",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/MISD/CC",
-            "ADDRESS":"1683  O'NEAL LN",
-            "ST NUMBER":"1683",
-            "ST DIR":"",
-            "ST NAME":"O'NEAL",
-            "ST TYPE":"LN",
-            "DISTRICT":"3",
-            "ZONE":"F",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"3F1",
-            "GEOMETRY":"30.445435, -91.007627"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.445435, -91.007627]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000343",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1719",
-            "CRIME":"NUISANCE",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"POSS/SALE FIREWORKS/CC",
-            "ADDRESS":"8100  GOODWOOD BL",
-            "ST NUMBER":"8100",
-            "ST DIR":"",
-            "ST NAME":"GOODWOOD",
-            "ST TYPE":"BL",
-            "DISTRICT":"3",
-            "ZONE":"G",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"3G1",
-            "GEOMETRY":"30.442345, -91.103649"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.442345, -91.103649]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000136",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"230",
-            "CRIME":"INDIVIDUAL ROBBERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ROBB/FIREARM/HWY STREET ALLEYS",
-            "ADDRESS":"2901  COLLEGE DR",
-            "ST NUMBER":"2901",
-            "ST DIR":"",
-            "ST NAME":"COLLEGE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"2B3",
-            "GEOMETRY":"30.421489, -91.140329"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.421489, -91.140329]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600008379",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"0",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"2732  APPLETON AV",
-            "ST NUMBER":"2732",
-            "ST DIR":"",
-            "ST NAME":"APPLETON",
-            "ST TYPE":"AV",
-            "DISTRICT":"4",
-            "ZONE":"B",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"4B3",
-            "GEOMETRY":"30.551968, -91.164325"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.551968, -91.164325]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600018187",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1236",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/IDENTITY",
-            "ADDRESS":"5359  PEERLESS",
-            "ST NUMBER":"5359",
-            "ST DIR":"",
-            "ST NAME":"PEERLESS",
-            "ST TYPE":"",
-            "DISTRICT":"",
-            "ZONE":"",
-            "SUBZONE":"",
-            "COMPLETE DISTRICT":"",
-            "GEOMETRY":"30.516715, -91.137106"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.516715, -91.137106]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000384",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1903",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BATT/SIMPLE/CC",
-            "ADDRESS":"4400  BAWELL ST",
-            "ST NUMBER":"4400",
-            "ST DIR":"",
-            "ST NAME":"BAWELL",
-            "ST TYPE":"ST",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2B2",
-            "GEOMETRY":"30.427478, -91.14412"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.427478, -91.14412]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000138",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"20",
-            "CRIME":"VEHICLE BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/AUTO OVER $200",
-            "ADDRESS":"11440  BARD AV",
-            "ST NUMBER":"11440",
-            "ST DIR":"",
-            "ST NAME":"BARD",
-            "ST TYPE":"AV",
-            "DISTRICT":"3",
-            "ZONE":"D",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"3D2",
-            "GEOMETRY":"30.467898, -91.055777"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.467898, -91.055777]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000570",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2300",
-            "CRIME":"VEHICLE BURGLARY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BURG/AUTO OVER $200",
-            "ADDRESS":"5934  GOODWOOD AV",
-            "ST NUMBER":"5934",
-            "ST DIR":"",
-            "ST NAME":"GOODWOOD",
-            "ST TYPE":"AV",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"4",
-            "COMPLETE DISTRICT":"2B4",
-            "GEOMETRY":"30.441594, -91.129601"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.441594, -91.129601]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000630",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"2200",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/SIMPLE",
-            "ADDRESS":"330  INGLESIDE DR",
-            "ST NUMBER":"330",
-            "ST DIR":"",
-            "ST NAME":"INGLESIDE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"2B1",
-            "GEOMETRY":"30.445245, -91.145384"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.445245, -91.145384]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000646",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1600",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"10032  AVENUE I ST",
-            "ST NUMBER":"10032",
-            "ST DIR":"",
-            "ST NAME":"AVENUE I",
-            "ST TYPE":"ST",
-            "DISTRICT":"4",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"4A1",
-            "GEOMETRY":"30.535789, -91.197941"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.535789, -91.197941]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1700086323",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"600",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OF MOTOR VEHICLE",
-            "ADDRESS":"745 N 22ND ST",
-            "ST NUMBER":"745",
-            "ST DIR":"N",
-            "ST NAME":"22ND",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"B",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1B1",
-            "GEOMETRY":"30.455162, -91.166078"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.455162, -91.166078]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000105",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"100",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/AGG",
-            "ADDRESS":"9426  DORCHESTER ST",
-            "ST NUMBER":"9426",
-            "ST DIR":"",
-            "ST NAME":"DORCHESTER",
-            "ST TYPE":"ST",
-            "DISTRICT":"3",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"3A1",
-            "GEOMETRY":"30.479499, -91.084642"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.479499, -91.084642]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000132",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"100",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/MISD/CC",
-            "ADDRESS":"2225  COLLEGE DR",
-            "ST NUMBER":"2225",
-            "ST DIR":"",
-            "ST NAME":"COLLEGE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2B2",
-            "GEOMETRY":"30.429243, -91.135745"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.429243, -91.135745]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000005",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"10",
-            "CRIME":"FIREARM",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"ILL CARRYING WEAPON/CC",
-            "ADDRESS":"333 N 3RD ST",
-            "ST NUMBER":"333",
-            "ST DIR":"N",
-            "ST NAME":"3RD",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1A1",
-            "GEOMETRY":"30.449874, -91.188286"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.449874, -91.188286]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000251",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1306",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/AGG",
-            "ADDRESS":"855  HEARTHSTONE DR",
-            "ST NUMBER":"855",
-            "ST DIR":"",
-            "ST NAME":"HEARTHSTONE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"A",
-            "SUBZONE":"3",
-            "COMPLETE DISTRICT":"2A3",
-            "GEOMETRY":"30.440228, -91.157015"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.440228, -91.157015]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000132",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"100",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"BATT/SIMPLE/CC",
-            "ADDRESS":"2225  COLLEGE DR",
-            "ST NUMBER":"2225",
-            "ST DIR":"",
-            "ST NAME":"COLLEGE",
-            "ST TYPE":"DR",
-            "DISTRICT":"2",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"2B2",
-            "GEOMETRY":"30.429243, -91.135745"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.429243, -91.135745]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000118",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"201",
-            "CRIME":"BATTERY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"DOMESTIC ABUSE BATT",
-            "ADDRESS":"860  BELHAVEN TRACE DR",
-            "ST NUMBER":"860",
-            "ST DIR":"",
-            "ST NAME":"BELHAVEN TRACE",
-            "ST TYPE":"DR",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1D2",
-            "GEOMETRY":"30.45735, -91.108611"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.45735, -91.108611]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1600000143",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"312",
-            "CRIME":"CRIMINAL DAMAGE TO PROPERTY",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"CRIM DAM TO PROP/AGG",
-            "ADDRESS":"2918  ONTARIO ST",
-            "ST NUMBER":"2918",
-            "ST DIR":"",
-            "ST NAME":"ONTARIO",
-            "ST TYPE":"ST",
-            "DISTRICT":"1",
-            "ZONE":"B",
-            "SUBZONE":"2",
-            "COMPLETE DISTRICT":"1B2",
-            "GEOMETRY":"30.47539, -91.159952"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.47539, -91.159952]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1800014719",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1200",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT/IDENTITY",
-            "ADDRESS":"7171  AIRLINE HW",
-            "ST NUMBER":"7171",
-            "ST DIR":"",
-            "ST NAME":"AIRLINE",
-            "ST TYPE":"HW",
-            "DISTRICT":"3",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"3A1",
-            "GEOMETRY":"30.483348, -91.11756"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.483348, -91.11756]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1800014719",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1200",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"7171  AIRLINE HW",
-            "ST NUMBER":"7171",
-            "ST DIR":"",
-            "ST NAME":"AIRLINE",
-            "ST TYPE":"HW",
-            "DISTRICT":"3",
-            "ZONE":"A",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"3A1",
-            "GEOMETRY":"30.483348, -91.11756"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.483348, -91.11756]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1800020189",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1827",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"THEFT OVER $200 ALL OTHER",
-            "ADDRESS":"1134 N ARDENWOOD DR",
-            "ST NUMBER":"1134",
-            "ST DIR":"N",
-            "ST NAME":"ARDENWOOD",
-            "ST TYPE":"DR",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1D1",
-            "GEOMETRY":"30.460202, -91.127724"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.460202, -91.127724]}
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "FILE NUMBER":"1800020189",
-            "OFFENSE DATE":"1/1/16",
-            "OFFENSE TIME":"1827",
-            "CRIME":"THEFT",
-            "COMMITTED":"COMMITTED",
-            "OFFENSE DESC":"FORGERY",
-            "ADDRESS":"1134 N ARDENWOOD DR",
-            "ST NUMBER":"1134",
-            "ST DIR":"N",
-            "ST NAME":"ARDENWOOD",
-            "ST TYPE":"DR",
-            "DISTRICT":"1",
-            "ZONE":"D",
-            "SUBZONE":"1",
-            "COMPLETE DISTRICT":"1D1",
-            "GEOMETRY":"30.460202, -91.127724"
-         },
-         "geometry":{"type": "Point", "coordinates":[30.460202, -91.127724]}
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"WATERFORD FOREST CIR",
+            "radio":"Everything,Last Year",
+            "time_to":-62135546400,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D1",
+            "phxrecordstatus":"Active",
+            "lon":-78.80763251,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"SATURDAY",
+            "phxstatus":"Active",
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"WATERFORD FOREST APTS",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135550000,
+            "map_reference":"P026",
+            "date_to":"07\/29\/2017",
+            "lat":35.785833567,
+            "phxcommunity":"Yes",
+            "crime_category":"ALL OTHER",
+            "activity_date":"24AUG2011",
+            "beat_number":"114",
+            "record":29303,
+            "incident_number":"17006539",
+            "apartment_complex":"WATERFORD FOREST APTS.",
+            "date_from":"2017-07-29"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.79908205,
+               35.777934151
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"CROSS KEYS CT",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135565204,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D1",
+            "phxrecordstatus":null,
+            "lon":-78.79908205,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"FRIDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"WATERFORD PLACE TOWNHOMES",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P036",
+            "date_to":"11\/03\/2017",
+            "lat":35.777934151,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"114",
+            "record":29384,
+            "incident_number":"17009628",
+            "apartment_complex":null,
+            "date_from":"2017-11-02"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.79994698,
+               35.769006811
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"OAKLEY CT",
+            "radio":"Everything,Last Year",
+            "time_to":-62135541120,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.79994698,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"FRIDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"PLANTATION ESTATES",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135544600,
+            "map_reference":"P037",
+            "date_to":"06\/09\/2017",
+            "lat":35.769006811,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"115",
+            "record":29540,
+            "incident_number":"17004933",
+            "apartment_complex":null,
+            "date_from":"2017-05-20"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.80276903,
+               35.75912106
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "street":"HELMSDALE DR",
+            "radio":"Everything,Last Year, Last 3 Months, Last 6 Months",
+            "time_to":-62135540588,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.80276903,
+            "timeframe":[
+               "Last Year",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "crimeday":"THURSDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":null,
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135540589,
+            "map_reference":"P038",
+            "date_to":"02\/22\/2018",
+            "lat":35.75912106,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"115",
+            "record":29556,
+            "incident_number":"18001661",
+            "apartment_complex":null,
+            "date_from":"2018-02-22"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.79523077,
+               35.767735208
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"BRUSH STREAM DR",
+            "radio":"Everything,Last Year",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.79523077,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"WEDNESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"LANDINGS AT PINE CREEK, THE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P039",
+            "date_to":"09\/13\/2017",
+            "lat":35.767735208,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"115",
+            "record":29605,
+            "incident_number":"17009358",
+            "apartment_complex":null,
+            "date_from":"2017-09-13"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.79110898,
+               35.771299719
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last Month",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "street":"SW MAYNARD RD",
+            "radio":"Everything,Last Year, Last Month, Last 3 Months, Last 6 Months",
+            "time_to":-62135534820,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.79110898,
+            "timeframe":[
+               "Last Year",
+               "Last Month",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "crimeday":"WEDNESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"MAYNARD WOODS",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135542800,
+            "map_reference":"P039",
+            "date_to":"03\/28\/2018",
+            "lat":35.771299719,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"115",
+            "record":29606,
+            "incident_number":"18003498",
+            "apartment_complex":null,
+            "date_from":"2018-03-08"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.80564787,
+               35.711266937
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"SELLY MANOR CT",
+            "radio":"Everything,Last Year",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.80564787,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"WEDNESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"DANBURY",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P007",
+            "date_to":"10\/11\/2017",
+            "lat":35.711266937,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"116",
+            "record":29724,
+            "incident_number":"17008848",
+            "apartment_complex":null,
+            "date_from":"2017-05-23"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.79054154,
+               35.704016297
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"MOUNT EDEN PL",
+            "radio":"Everything,Last Year",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.79054154,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"WEDNESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"DEVINTAGE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P052",
+            "date_to":"07\/12\/2017",
+            "lat":35.704016297,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"116",
+            "record":29839,
+            "incident_number":"17005890",
+            "apartment_complex":null,
+            "date_from":"2017-07-12"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.78216601,
+               35.737272111
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"KILDAIRE FARM RD",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135541000,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.78216601,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"MONDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"CRESCENT COMMONS SHOP CENTER",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135546400,
+            "map_reference":"P053",
+            "date_to":"11\/27\/2017",
+            "lat":35.737272111,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"116",
+            "record":29943,
+            "incident_number":"17010425",
+            "apartment_complex":null,
+            "date_from":"2017-11-27"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.76372228,
+               35.729655033
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"LOCHWOOD WEST DR",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.76372228,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"TUESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"LOCHMERE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P047",
+            "date_to":"01\/02\/2018",
+            "lat":35.729655033,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"118",
+            "record":30402,
+            "incident_number":"18000115",
+            "apartment_complex":null,
+            "date_from":"2017-12-04"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.89827125,
+               35.845361424
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "street":"STONEWATER GLEN LN",
+            "radio":"Everything,Last Year, Last 3 Months, Last 6 Months",
+            "time_to":-62135522400,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D2",
+            "phxrecordstatus":"Active",
+            "lon":-78.89827125,
+            "timeframe":[
+               "Last Year",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "crimeday":"TUESDAY",
+            "phxstatus":"Active",
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":null,
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135564400,
+            "map_reference":"P074",
+            "date_to":"03\/06\/2018",
+            "lat":35.845361424,
+            "phxcommunity":"Yes",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"119",
+            "record":30459,
+            "incident_number":"18002054",
+            "apartment_complex":"TRADITION AT STONEWATER APTS.",
+            "date_from":"2018-03-05"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.75931174,
+               35.77385099
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"WALNUT ST",
+            "radio":"Everything,Last Year",
+            "time_to":-62135521789,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D1",
+            "phxrecordstatus":null,
+            "lon":-78.75931174,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"SATURDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"CARY TOWNE CENTER",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135521790,
+            "map_reference":"P121",
+            "date_to":"09\/30\/2017",
+            "lat":35.77385099,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"120",
+            "record":30747,
+            "incident_number":"17008489",
+            "apartment_complex":null,
+            "date_from":"2017-09-30"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.84214183,
+               35.826129971
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"IVERTON LN",
+            "radio":"Everything,Last Year",
+            "time_to":-62135542380,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.84214183,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"MONDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"SEAL HARBOR AT TWIN LAKES",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135532600,
+            "map_reference":"P011",
+            "date_to":"07\/03\/2017",
+            "lat":35.826129971,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"121",
+            "record":30761,
+            "incident_number":"17005656",
+            "apartment_complex":null,
+            "date_from":"2017-04-28"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.84600965,
+               35.796794021
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"COUNCIL GAP CT",
+            "radio":"Everything,Last Year",
+            "time_to":-62135559840,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.84600965,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"SUNDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"GEORGETOWNE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135559840,
+            "map_reference":"P078",
+            "date_to":"06\/18\/2017",
+            "lat":35.796794021,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"121",
+            "record":30860,
+            "incident_number":"17005181",
+            "apartment_complex":null,
+            "date_from":"2017-06-18"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.8358898,
+               35.798429185
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"CHAMPIONS POINT WAY",
+            "radio":"Everything,Last Year",
+            "time_to":-62135543402,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.8358898,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"SATURDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"PRESTON ESTATES",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P078",
+            "date_to":"10\/21\/2017",
+            "lat":35.798429185,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"121",
+            "record":30861,
+            "incident_number":"17009204",
+            "apartment_complex":null,
+            "date_from":"2017-09-14"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.87131416,
+               35.795927922
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1190",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"ARBOR VIEW DR",
+            "radio":"Everything,Last Year",
+            "time_to":-62135533356,
+            "crime_type":"FRAUD - ALL OTHER",
+            "district":"D2",
+            "phxrecordstatus":"Active",
+            "lon":-78.87131416,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"FRIDAY",
+            "phxstatus":"Active",
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"BROOK ARBOR APARTMENTS",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135533357,
+            "map_reference":"P077",
+            "date_to":"08\/04\/2017",
+            "lat":35.795927922,
+            "phxcommunity":"Yes",
+            "crime_category":"ALL OTHER",
+            "activity_date":"16MAY2012",
+            "beat_number":"122",
+            "record":30874,
+            "incident_number":"17006621",
+            "apartment_complex":"BROOK ARBOR APTS.",
+            "date_from":"2017-08-04"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.78451846,
+               35.802937141
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"NW MAYNARD RD",
+            "radio":"Everything,Last Year",
+            "time_to":-62135549460,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D1",
+            "phxrecordstatus":null,
+            "lon":-78.78451846,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"FRIDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"NORTHWOODS UNDEV",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135549460,
+            "map_reference":"P024",
+            "date_to":"08\/25\/2017",
+            "lat":35.802937141,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"111",
+            "record":31034,
+            "incident_number":"17007308",
+            "apartment_complex":null,
+            "date_from":"2017-08-25"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.75736245,
+               35.771841583
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"IVY LN",
+            "radio":"Everything,Last Year",
+            "time_to":-62135540100,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.75736245,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"TUESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":null,
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P003",
+            "date_to":"09\/12\/2017",
+            "lat":35.771841583,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"112",
+            "record":31161,
+            "incident_number":"17007891",
+            "apartment_complex":null,
+            "date_from":"2017-09-12"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.78216212,
+               35.763756396
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"KILDAIRE FARM RD",
+            "radio":"Everything,Last Year",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.78216212,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"THURSDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"KILDAIRE PLAZA",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P027",
+            "date_to":"02\/02\/2017",
+            "lat":35.763756396,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"112",
+            "record":31210,
+            "incident_number":"17004373",
+            "apartment_complex":null,
+            "date_from":"2017-01-27"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.78200313,
+               35.760212065
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"KILDAIRE FARM RD",
+            "radio":"Everything,Last Year",
+            "time_to":-62135531877,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.78200313,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"MONDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"SHOPPES OF KILDAIRE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135531878,
+            "map_reference":"P027",
+            "date_to":"10\/16\/2017",
+            "lat":35.760212065,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"112",
+            "record":31214,
+            "incident_number":"17009040",
+            "apartment_complex":null,
+            "date_from":"2017-10-16"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.78462768,
+               35.787250289
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"W CHATHAM ST",
+            "radio":"Everything,Last Year",
+            "time_to":-62135566740,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D1",
+            "phxrecordstatus":null,
+            "lon":-78.78462768,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"WEDNESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"TCAP ZONE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135566740,
+            "map_reference":"P035",
+            "date_to":"08\/02\/2017",
+            "lat":35.787250289,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"114",
+            "record":31496,
+            "incident_number":"17006526",
+            "apartment_complex":null,
+            "date_from":"2017-08-02"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.81214547,
+               35.785510081
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"NW MAYNARD RD",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135548260,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D1",
+            "phxrecordstatus":null,
+            "lon":-78.81214547,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"SATURDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":null,
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135551200,
+            "map_reference":"P065",
+            "date_to":"11\/11\/2017",
+            "lat":35.785510081,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"114",
+            "record":31616,
+            "incident_number":"17009905",
+            "apartment_complex":null,
+            "date_from":"2017-11-11"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.77643738,
+               35.756230028
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"HERTFORDSHIRE CT",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135520900,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D3",
+            "phxrecordstatus":"Active",
+            "lon":-78.77643738,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"SATURDAY",
+            "phxstatus":"Active",
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"HAWTHORNE AT THE PARKWAY",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135515020,
+            "map_reference":"P005",
+            "date_to":"01\/06\/2018",
+            "lat":35.756230028,
+            "phxcommunity":"Yes",
+            "crime_category":"ALL OTHER",
+            "activity_date":"03JAN2011",
+            "beat_number":"115",
+            "record":31650,
+            "incident_number":"18000191",
+            "apartment_complex":"HAWTHORNE AT THE PARKWAY APTS.",
+            "date_from":"2018-01-03"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.78665468,
+               35.760192829
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last Month",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "street":"ALLISON WAY",
+            "radio":"Everything,Last Year, Last Month, Last 3 Months, Last 6 Months",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.78665468,
+            "timeframe":[
+               "Last Year",
+               "Last Month",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "crimeday":"MONDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":null,
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P006",
+            "date_to":"04\/23\/2018",
+            "lat":35.760192829,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"115",
+            "record":31672,
+            "incident_number":"18003499",
+            "apartment_complex":null,
+            "date_from":"2018-04-15"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.78539639,
+               35.738981201
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"ASHVILLE AV",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.78539639,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"WEDNESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"ASHLEY VILLAGE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P044",
+            "date_to":"11\/22\/2017",
+            "lat":35.738981201,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"115",
+            "record":31813,
+            "incident_number":"17011250",
+            "apartment_complex":null,
+            "date_from":"2017-10-31"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.79186795,
+               35.725255692
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"TIERCEL CT",
+            "radio":"Everything,Last Year",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D3",
+            "phxrecordstatus":null,
+            "lon":-78.79186795,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"SATURDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"FALCONERS RIDGE",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P054",
+            "date_to":"05\/27\/2017",
+            "lat":35.725255692,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"116",
+            "record":32078,
+            "incident_number":"17007306",
+            "apartment_complex":null,
+            "date_from":"2017-05-27"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.87061624,
+               35.782152083
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"PARK OAKS CT",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135553600,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.87061624,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"THURSDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"CLUBHOMES AT WESTPARK",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P013",
+            "date_to":"11\/30\/2017",
+            "lat":35.782152083,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"117",
+            "record":32152,
+            "incident_number":"17010606",
+            "apartment_complex":null,
+            "date_from":"2017-11-30"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.84657359,
+               35.783937395
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"1150",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"SUMMERGLOW CT",
+            "radio":"Everything,Last Year",
+            "time_to":-62135561520,
+            "crime_type":"FRAUD - CREDIT CARD\/ATM",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.84657359,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"TUESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part II",
+            "residential_subdivision":"FENTON ESTATES",
+            "offensecategory":"Fraud",
+            "chrgcnt":null,
+            "time_from":-62135553600,
+            "map_reference":"P018",
+            "date_to":"05\/30\/2017",
+            "lat":35.783937395,
+            "phxcommunity":"No",
+            "crime_category":"ALL OTHER",
+            "activity_date":null,
+            "beat_number":"117",
+            "record":32188,
+            "incident_number":"17004745",
+            "apartment_complex":null,
+            "date_from":"2017-05-30"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.92052628,
+               35.816967398
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"0520",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"KEYTHORPE LN",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135566200,
+            "crime_type":"BURGLARY - NON-FORCED ENTRY",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.92052628,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"TUESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part I",
+            "residential_subdivision":"PENINSULA AT AMBERLY",
+            "offensecategory":"Burglary",
+            "chrgcnt":null,
+            "time_from":-62135535600,
+            "map_reference":"P123",
+            "date_to":"01\/09\/2018",
+            "lat":35.816967398,
+            "phxcommunity":"No",
+            "crime_category":"BURGLARY",
+            "activity_date":null,
+            "beat_number":"119",
+            "record":18319,
+            "incident_number":"18000258",
+            "apartment_complex":null,
+            "date_from":"2018-01-08"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.85992276,
+               35.824338508
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"0520",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"PRESIDENTS WALK LN",
+            "radio":"Everything,Last Year",
+            "time_to":-62135592604,
+            "crime_type":"BURGLARY - NON-FORCED ENTRY",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.85992276,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"TUESDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part I",
+            "residential_subdivision":"LEGACY AT CARPENTER VILLAGE",
+            "offensecategory":"Burglary",
+            "chrgcnt":null,
+            "time_from":-62135517545,
+            "map_reference":"P073",
+            "date_to":"06\/20\/2017",
+            "lat":35.824338508,
+            "phxcommunity":"No",
+            "crime_category":"BURGLARY",
+            "activity_date":null,
+            "beat_number":"121",
+            "record":18428,
+            "incident_number":"17005227",
+            "apartment_complex":null,
+            "date_from":"2017-06-19"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.84553841,
+               35.831656312
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"0520",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year"
+            ],
+            "street":"OTTER CLIFF WAY",
+            "radio":"Everything,Last Year",
+            "time_to":-62135516100,
+            "crime_type":"BURGLARY - NON-FORCED ENTRY",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.84553841,
+            "timeframe":[
+               "Last Year"
+            ],
+            "crimeday":"FRIDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part I",
+            "residential_subdivision":"SEAL HARBOR AT TWIN LAKES",
+            "offensecategory":"Burglary",
+            "chrgcnt":null,
+            "time_from":-62135528400,
+            "map_reference":"P073",
+            "date_to":"09\/22\/2017",
+            "lat":35.831656312,
+            "phxcommunity":"No",
+            "crime_category":"BURGLARY",
+            "activity_date":null,
+            "beat_number":"121",
+            "record":18430,
+            "incident_number":"17008220",
+            "apartment_complex":null,
+            "date_from":"2017-09-22"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.85510911,
+               35.837464768
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"0520",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "street":"PEMBERWICH PL",
+            "radio":"Everything,Last Year, Last 3 Months, Last 6 Months",
+            "time_to":-62135533800,
+            "crime_type":"BURGLARY - NON-FORCED ENTRY",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.85510911,
+            "timeframe":[
+               "Last Year",
+               "Last 3 Months",
+               "Last 6 Months"
+            ],
+            "crimeday":"SATURDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part I",
+            "residential_subdivision":"TWIN LAKES",
+            "offensecategory":"Burglary",
+            "chrgcnt":null,
+            "time_from":-62135550000,
+            "map_reference":"P073",
+            "date_to":"03\/17\/2018",
+            "lat":35.837464768,
+            "phxcommunity":"No",
+            "crime_category":"BURGLARY",
+            "activity_date":null,
+            "beat_number":"121",
+            "record":18432,
+            "incident_number":"18002420",
+            "apartment_complex":null,
+            "date_from":"2018-03-11"
+         }
+      },
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -78.88882758,
+               35.803131891
+            ]
+         },
+         "type":"Feature",
+         "properties":{
+            "ucr":"0520",
+            "domestic":"N",
+            "period":[
+               "Everything",
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "street":"ROCKCASTLE DR",
+            "radio":"Everything,Last Year, Last 6 Months",
+            "time_to":-62135582400,
+            "crime_type":"BURGLARY - NON-FORCED ENTRY",
+            "district":"D2",
+            "phxrecordstatus":null,
+            "lon":-78.88882758,
+            "timeframe":[
+               "Last Year",
+               "Last 6 Months"
+            ],
+            "crimeday":"SUNDAY",
+            "phxstatus":null,
+            "location_category":"TOWN OWNED",
+            "violentproperty":"Part I",
+            "residential_subdivision":null,
+            "offensecategory":"Burglary",
+            "chrgcnt":null,
+            "time_from":-62135583300,
+            "map_reference":"P072",
+            "date_to":"12\/03\/2017",
+            "lat":35.803131891,
+            "phxcommunity":"No",
+            "crime_category":"BURGLARY",
+            "activity_date":null,
+            "beat_number":"122",
+            "record":18467,
+            "incident_number":"17010648",
+            "apartment_complex":null,
+            "date_from":"2017-12-03"
+         }
       }
    ]
 }
