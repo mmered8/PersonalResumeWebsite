@@ -44,4 +44,4 @@ polyline.bindPopup('OUTER LAKE LIMITS')
 
 currentMap.on('click', function (event) {
   console.log('You clicked the map at ' + event.latlng)
-})
+// })

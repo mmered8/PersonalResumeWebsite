@@ -56,33 +56,46 @@ let basemaps = {
    theWorstBest(feature,layer);
  }
 
- function myIcon(feature, layer)
+ function pickIcon(feature, latlng)
  {
-   let name = feature.properties.STATE_NAME
-   let crime = feature.properties.CRIME
    let myIcon = L.icon({
-     iconUrl: 'star.jpg',
+     iconUrl: 'star.png',
      iconSize: [35, 60], // size of the icon
-     iconAnchor: [21, 93], // point of the icon which will correspond to marker's location
-     popupAnchor: [-2, -75] // point from which the popup should open relative to the iconAnchor
+     iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+     popupAnchor: [-100, -100] // point from which the popup should open relative to the iconAnchor
    })
    if (crime>300 && crime <600  ) {
-     myIcon.iconUrl = 'yellowCircle.png'
+     myIcon=L.icon({
+       iconUrl: 'yellowCircle.png',
+       iconSize: [35, 60], // size of the icon
+       iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+       popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
+     })
    }
    else if(crime>600 && crime <800) {
-     myIcon.iconUrl = 'OrangeCircle.png'
+     myIcon=L.icon({
+       iconUrl: 'OrangeCircle.png',
+       iconSize: [35, 60], // size of the icon
+       iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+       popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
+     })
    }
    else if(crime >800 ){
-     myIcon.iconUrl = 'badStar.png'
+     myIcon=L.icon({
+       iconUrl: 'badStar.png',
+       iconSize: [35, 60], // size of the icon
+       iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+       popupAnchor: [-10, -75] // point from which the popup should open relative to the iconAnchor
+     })
    }
-   // return Layer.marker([50.457504, -69.169922], {icon: myIcon});
-   layer.marker([45.706179, -80.244141], {icon: myIcon});
+
+   return L.marker(latlng, { icon: myIcon })
  }
 
   let mapOptions = {
     style: myStyle,
     onEachFeature: myPopup,
-    marker: myIcon
+    pointToLayer: pickIcon
   }
   L.geoJSON(stateDemographics, mapOptions).addTo(newMap)
 }
