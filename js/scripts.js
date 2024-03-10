@@ -28,6 +28,9 @@ function handleSubmit(event) {
     var emailValue = document.getElementById('email').value;
     var numberValue = document.getElementById('phone').value;
     var messageValue = document.getElementById('message').value;
+
+    
+
     var error = 0;
     if (!nameValue) {
         // Show error for name field
@@ -52,21 +55,21 @@ function handleSubmit(event) {
         message: messageValue
     };
 
-    // Fetch request to your API
     fetch('https://hqqehdq4jb.execute-api.us-east-2.amazonaws.com/FormAPI/', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {'Content-Type': 'application/json'}
     })
     .then(response => {
+        console.log('Received response:', response); // Log the raw response
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         return response.json();
     })
-    .then(data => {
+    .then(responseData => {
+        console.log('Response data:', responseData); // Log the response data
         document.getElementById('submitSuccessMessage').classList.remove('d-none');
-        // Optionally, reset form fields here
     })
     .catch(error => {
         console.error('Error:', error);
