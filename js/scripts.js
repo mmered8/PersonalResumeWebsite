@@ -33,10 +33,10 @@ function handleSubmit(event) {
         // Show error for name field
         document.querySelector('[data-sb-feedback="name:required"]').classList.remove('d-none');
         error = 1; 
-    } else if(!numberValue) {
+    } else if(!emailValue) {
         document.querySelector('[data-sb-feedback="email:required"]').classList.remove('d-none');
         error = 1; 
-    } else if(!emailValue) {
+    } else if(!numberValue) {
         document.querySelector('[data-sb-feedback="number:required"]').classList.remove('d-none');
         error = 1; 
     } else if(!messageValue) {
