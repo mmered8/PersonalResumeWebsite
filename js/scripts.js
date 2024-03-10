@@ -37,4 +37,19 @@ function handleSubmit(event) {
     })
     .then(responseData => {
         console.log('Response data:', responseData); // Log the response data
-        document.getEleme
+        document.getElementById('submitSuccessMessage').classList.remove('d-none');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('submitErrorMessage').classList.remove('d-none');
+    });
+}
+
+// Attach the event listener to the form
+document.getElementById('contactForm').addEventListener('submit', handleSubmit);
+
+// To hide error messages when the user starts typing again
+document.getElementById('contactForm').addEventListener('input', function(event) {
+    var feedbackElements = document.getElementsByClassName('invalid-feedback');
+    Array.from(feedbackElements).forEach(el => el.classList.add('d-none'));
+});
