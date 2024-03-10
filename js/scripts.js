@@ -19,37 +19,37 @@
 
 // });
 
-function showSuccessMessage() {
-    document.getElementById('submitSuccessMessage').classList.remove('d-none');
-}
-
-function showErrorMessage() {
-    document.getElementById('submitErrorMessage').classList.remove('d-none');
-}
-
-function hideMessages() {
-    document.getElementById('submitSuccessMessage').classList.add('d-none');
-    document.getElementById('submitErrorMessage').classList.add('d-none');
-}
-
 
 function handleSubmit(event) {
     event.preventDefault(); // Prevent default form submission
 
-    // Perform custom validation (example for name field)
-    var name = document.getElementById('name').value;
-    if (!name) {
+    // Perform custom validation
+    var nameValue = document.getElementById('name').value;
+    var emailValue = document.getElementById('email').value;
+    var numberValue = document.getElementById('number').value;
+    var messageValue = document.getElementById('message').value;
+    var error = 0;
+    if (!nameValue) {
         // Show error for name field
         document.querySelector('[data-sb-feedback="name:required"]').classList.remove('d-none');
-        return; // Stop the function if validation fails
+        error = 1; 
+    } else if(!numberValue) {
+        document.querySelector('[data-sb-feedback="email:required"]').classList.remove('d-none');
+        error = 1; 
+    } else if(!emailValue) {
+        document.querySelector('[data-sb-feedback="number:required"]').classList.remove('d-none');
+        error = 1; 
+    } else if(!messageValue) {
+        document.querySelector('[data-sb-feedback="message:required"]').classList.remove('d-none');
+        error = 1; 
     }
 
     // Assuming validation passes, construct the data object
     const data = {
-        name: name,
-        email: document.getElementById('email').value,
-        number: document.getElementById('phone').value,
-        message: document.getElementById('message').value
+        name: nameValue,
+        email: emailValue,
+        number: numberValue,
+        message: messageValue
     };
 
     // Fetch request to your API
