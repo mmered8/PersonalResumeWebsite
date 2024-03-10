@@ -26,7 +26,7 @@ function handleSubmit(event) {
     // Perform custom validation
     var nameValue = document.getElementById('name').value;
     var emailValue = document.getElementById('email').value;
-    var numberValue = document.getElementById('number').value;
+    var numberValue = document.getElementById('phone').value;
     var messageValue = document.getElementById('message').value;
     var error = 0;
     if (!nameValue) {
@@ -37,7 +37,7 @@ function handleSubmit(event) {
         document.querySelector('[data-sb-feedback="email:required"]').classList.remove('d-none');
         error = 1; 
     } else if(!numberValue) {
-        document.querySelector('[data-sb-feedback="number:required"]').classList.remove('d-none');
+        document.querySelector('[data-sb-feedback="phone:required"]').classList.remove('d-none');
         error = 1; 
     } else if(!messageValue) {
         document.querySelector('[data-sb-feedback="message:required"]').classList.remove('d-none');
