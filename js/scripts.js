@@ -53,7 +53,7 @@ function handleSubmit(event) {
     };
 
     // Fetch request to your API
-    fetch('https://hqqehdq4jb.execute-api.us-east-2.amazonaws.com/FormAPI', {
+    fetch('https://hqqehdq4jb.execute-api.us-east-2.amazonaws.com/FormAPI/', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {'Content-Type': 'application/json'}
