@@ -22,6 +22,8 @@ function handleSubmit(event) {
         message: messageValue
     };
 
+    console.log("Sending data:", JSON.stringify(data));
+
     // Fetch request to your API
     fetch('https://hqqehdq4jb.execute-api.us-east-2.amazonaws.com/FormAPI/', {
         method: 'POST',
