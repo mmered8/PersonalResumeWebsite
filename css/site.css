@@ -273,16 +273,30 @@ header.py-5::after {
     font-variation-settings: "SOFT" 100;
 }
 
-/* The four SVG dot decorations behind the profile photo — desaturate to brass */
-.dots-1 svg path, .dots-2 svg path,
-.dots-3 svg path, .dots-4 svg path {
-    fill: rgba(184, 116, 58, 0.22);
-}
-
-/* Profile photo halo: navy → brass instead of purple → pink */
+/* Hero photo — a framed coastal portrait, not a cutout.
+   The .profile box becomes a navy→brass accent block; the photo sits
+   on top, shifted up-and-left so the gradient peeks out at the
+   bottom-right like a deliberate offset frame. */
 .profile.bg-gradient-primary-to-secondary {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%) !important;
+    overflow: visible;
 }
+.profile-img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center 42%;
+    border-radius: inherit;
+    left: 0;
+    transform: translate(-15px, -15px);
+    box-shadow: 0 28px 55px -28px rgba(26, 46, 72, 0.45);
+}
+
+/* The template's decorative dot grids suited the old cutout style — retire them */
+.dots-1, .dots-2, .dots-3, .dots-4 { display: none; }
 
 
 /* ==============================================================
