@@ -3,19 +3,22 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Modern Business - Start Bootstrap Template</title>
+        <meta name="description" content="Selected projects by Mason Locke Meredith — AI agent systems, financial planning tools, multi-platform content automation, and MCP infrastructure." />
+        <meta name="author" content="Mason Locke Meredith" />
+        <title>Projects &mdash; Mason Locke Meredith</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Site overrides — must load AFTER styles.css -->
+        <link href="css/site.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -38,51 +41,203 @@
             <section class="py-5">
                 <div class="container px-5 mb-5">
                     <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                        <h1 class="display-5 fw-bolder mb-3"><span class="text-gradient d-inline">Projects</span></h1>
+                        <p class="lead text-muted mb-0 mx-auto" style="max-width: 720px;">A curated set of the systems I've built recently &mdash; financial tooling, AI content automation, autonomous agent infrastructure, and the MCP servers I use to keep it all coordinated. Each one is public on GitHub.</p>
                     </div>
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">ArcGis - 2018</h2>
-                                            <p>This is a project from my original bachelors where i generated a final project that took in fed data and manipulated a map with global latlong info. </p>
-                                        </div>
-                                        <a href="gis_project/index.html"><img class="img-fluid" src="assets/gis_portfolio_pic.png" alt="..." /></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">HHL Quantum program</h2>
-                                            <p>This is a basic quantum program developed and displayed with help from the various driving tutorial sites</p>
-                                        </div>
-                                        <a href="https://colab.research.google.com/drive/199z0g7id4rMEpiBnszfgtSerEJk9s_jf?usp=sharing"><img class="img-fluid" src="assets/collab_image.jpg" alt="Collab" /></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 3-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Vagrant, Ansible, Virtual Box, zookeeper, etc... </h2>
-                                            <p>
-                                            The presented portfolio section showcases an adept utilization of Ansible, Vagrant, and a cloud platform, notably AWS, to methodically construct a fundamental publish-subscribe (pub-sub) system. This project exemplifies not only the creation of a basic pub-sub model but also delves into the intricacies of automated instance generation, a skill not commonly mastered in the field.
+                        <div class="col-lg-11 col-xl-10 col-xxl-9">
 
-                                            It is important to note that a more complex iteration of this project can be found within the a cassandra section if that garners more interest. While the advanced version primarily emphasizes the Python coding aspects necessary for the pub-sub instances, the focus here is distinctly on the automation of instance creation. This aspect of the project highlights the technical proficiency required to effectively orchestrate and manage cloud-based resources, demonstrating a deep understanding of both infrastructure automation and cloud computing principles.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="https://github.com/mmered8/Vagrant-workspace"><img class="img-fluid" src="assets/vagrant_work.png" alt="Collab" /></a>
+                            <!-- ============ FEATURED ============ -->
+                            <h2 class="fw-bolder text-primary mb-4">Featured</h2>
 
+                            <!-- Featured #1 — BudgetRevolution -->
+                            <div class="card shadow border-0 rounded-4 mb-4">
+                                <div class="card-body p-4 p-md-5">
+                                    <div class="d-flex flex-column flex-md-row align-items-md-start justify-content-between mb-3 gap-3">
+                                        <div>
+                                            <h3 class="fw-bolder mb-1">BudgetRevolution</h3>
+                                            <p class="text-muted mb-0">An "excess" calculation engine for personal finance &mdash; answers <em>"how much can I spend right now without overdrafting?"</em></p>
+                                        </div>
+                                        <a class="btn btn-outline-primary btn-sm flex-shrink-0" href="https://github.com/mmered8/BudgetRevolution" target="_blank" rel="noopener">
+                                            <i class="bi bi-github me-1"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border me-1 mb-1">FastAPI</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">PostgreSQL (async)</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">SQLAlchemy</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Plaid</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">pydantic-ai</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Chart.js</span>
+                                    </div>
+                                    <ul class="mb-0">
+                                        <li>Custom <strong>Excess formula</strong> reconciles income, expenses, future obligations, and safety buffers in real time.</li>
+                                        <li>AI-powered transaction labeling via a multi-provider pydantic-ai layer (Grok, Claude, OpenAI).</li>
+                                        <li>Materialized views and S0/S1/S2 drill-down dashboards for fast reporting on years of transaction history.</li>
+                                    </ul>
                                 </div>
                             </div>
+
+                            <!-- Featured #2 — ContentEngine -->
+                            <div class="card shadow border-0 rounded-4 mb-4">
+                                <div class="card-body p-4 p-md-5">
+                                    <div class="d-flex flex-column flex-md-row align-items-md-start justify-content-between mb-3 gap-3">
+                                        <div>
+                                            <h3 class="fw-bolder mb-1">ContentEngine</h3>
+                                            <p class="text-muted mb-0">A daily-shipping AI video factory &mdash; generates short-form cinematic stories and publishes to YouTube Shorts, TikTok, and X.</p>
+                                        </div>
+                                        <a class="btn btn-outline-primary btn-sm flex-shrink-0" href="https://github.com/mmered8/ContentEngine" target="_blank" rel="noopener">
+                                            <i class="bi bi-github me-1"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Python 3.13</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Click CLI</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">pydantic-ai</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Grok AI + Imagine</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">edge-tts</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">ffmpeg</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">YouTube / TikTok / X APIs</span>
+                                    </div>
+                                    <ul class="mb-0">
+                                        <li>Two production modes: <em>short-movie</em> (30&ndash;60s lip-synced Shorts) and <em>voice-deal</em> (180&ndash;600s narrated stills with Ken Burns motion).</li>
+                                        <li>Custom <strong>ScriptQualityAgent</strong> runs a plan&rarr;draft&rarr;critique&rarr;refine loop before any frame is rendered.</li>
+                                        <li>Encrypted Fernet+PBKDF2 config management, 80% test coverage enforced.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Featured #3 — OpenClawCoordination -->
+                            <div class="card shadow border-0 rounded-4 mb-4">
+                                <div class="card-body p-4 p-md-5">
+                                    <div class="d-flex flex-column flex-md-row align-items-md-start justify-content-between mb-3 gap-3">
+                                        <div>
+                                            <h3 class="fw-bolder mb-1">OpenClawCoordination &mdash; Agent Fleet</h3>
+                                            <p class="text-muted mb-0">A three-machine autonomous coding-agent fleet that runs overnight builds, with hard safety boundaries and zero per-token cost beyond a flat subscription.</p>
+                                        </div>
+                                        <a class="btn btn-outline-primary btn-sm flex-shrink-0" href="https://github.com/mmered8/OpenClawCoordination" target="_blank" rel="noopener">
+                                            <i class="bi bi-github me-1"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Python automation</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Windows Task Scheduler</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">SSH dispatch</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Ollama (CodeLlama 7B)</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Claude Code CLI</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Fernet config</span>
+                                    </div>
+                                    <ul class="mb-0">
+                                        <li><strong>MotherShip</strong> (main PC) orchestrates, <strong>DroneShip_1</strong> handles zero-token janitor work (auto-commits, health pings), <strong>Mitch</strong> (RTX 4060) handles local code review.</li>
+                                        <li>2 AM cron spawns a coding-agent that builds against an allow-list of BUILD TARGET repos &mdash; PROTECTED repos are never touched.</li>
+                                        <li>512-line PERMISSIONS matrix, automated secret scanning, three-layer escalation (DroneShip &rarr; MotherShip &rarr; Mason).</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Featured #4 — MCP Ecosystem -->
+                            <div class="card shadow border-0 rounded-4 mb-4">
+                                <div class="card-body p-4 p-md-5">
+                                    <div class="d-flex flex-column flex-md-row align-items-md-start justify-content-between mb-3 gap-3">
+                                        <div>
+                                            <h3 class="fw-bolder mb-1">MCP Ecosystem &mdash; Master_Plan + MCPServers</h3>
+                                            <p class="text-muted mb-0">A pair of Model Context Protocol servers (28 tools combined) that turn every Claude Code session across my workspace into a coordinated, queryable system.</p>
+                                        </div>
+                                        <div class="d-flex gap-2 flex-shrink-0 flex-column flex-sm-row">
+                                            <a class="btn btn-outline-primary btn-sm" href="https://github.com/mmered8/master_plan" target="_blank" rel="noopener">
+                                                <i class="bi bi-github me-1"></i> Master_Plan
+                                            </a>
+                                            <a class="btn btn-outline-primary btn-sm" href="https://github.com/mmered8/MCPServers" target="_blank" rel="noopener">
+                                                <i class="bi bi-github me-1"></i> MCPServers
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border me-1 mb-1">FastMCP</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">streamable-http</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">FastAPI dashboard</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">Alembic + Postgres (v2)</span>
+                                        <span class="badge bg-light text-dark border me-1 mb-1">pytest</span>
+                                    </div>
+                                    <ul class="mb-0">
+                                        <li><strong>Master_Plan</strong> is my single source of truth across all projects &mdash; tracks task queues, ideation pipeline, project health, and exposes 18 MCP tools so every Claude Code session can query and mutate state directly.</li>
+                                        <li><strong>MCPServers</strong> is a public portfolio repo demonstrating the full FastMCP build pattern, designed to fork and adapt.</li>
+                                        <li>v2 migration in progress: flipping from direct-markdown edits to Postgres + Alembic, with MCP as the only write path.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- ============ MORE WORK ============ -->
+                            <h2 class="fw-bolder text-primary mb-4 mt-5">More work</h2>
+
+                            <!-- LandlordAdvisor -->
+                            <div class="card shadow-sm border-0 rounded-4 mb-3">
+                                <div class="card-body p-4">
+                                    <div class="d-flex flex-column flex-md-row align-items-md-start justify-content-between gap-2">
+                                        <div>
+                                            <h4 class="fw-bolder mb-1">LandlordAdvisor</h4>
+                                            <p class="text-muted mb-2">Forward-looking AI financial advisor for solo landlords &mdash; rent optimization, capex forecasting, and deal analysis. Existing tools do backward-looking accounting; this answers <em>"should I raise rent?"</em> and <em>"is this property worth buying?"</em></p>
+                                            <div>
+                                                <span class="badge bg-light text-dark border me-1 mb-1">FastAPI</span>
+                                                <span class="badge bg-light text-dark border me-1 mb-1">PostgreSQL</span>
+                                                <span class="badge bg-light text-dark border me-1 mb-1">Plaid</span>
+                                                <span class="badge bg-light text-dark border me-1 mb-1">Grok API</span>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-outline-secondary btn-sm flex-shrink-0" href="https://github.com/mmered8/LandlordAdvisor" target="_blank" rel="noopener">
+                                            <i class="bi bi-github me-1"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- OpenClawService -->
+                            <div class="card shadow-sm border-0 rounded-4 mb-3">
+                                <div class="card-body p-4">
+                                    <div class="d-flex flex-column flex-md-row align-items-md-start justify-content-between gap-2">
+                                        <div>
+                                            <h4 class="fw-bolder mb-1">OpenClawService</h4>
+                                            <p class="text-muted mb-2">Productized secure OpenClaw setup-as-a-service. Three tiers, security-first positioning in a market with 512+ known CVEs. Includes hardening scripts, audit checklists, and managed-hosting tier.</p>
+                                            <div>
+                                                <span class="badge bg-light text-dark border me-1 mb-1">Bash automation</span>
+                                                <span class="badge bg-light text-dark border me-1 mb-1">Security hardening</span>
+                                                <span class="badge bg-light text-dark border me-1 mb-1">Productized service</span>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-outline-secondary btn-sm flex-shrink-0" href="https://github.com/mmered8/OpenClawService" target="_blank" rel="noopener">
+                                            <i class="bi bi-github me-1"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ============ EARLIER ACADEMIC WORK (COLLAPSED) ============ -->
+                            <div class="mt-5">
+                                <button class="btn btn-link text-decoration-none p-0 fw-bolder text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#earlierWork" aria-expanded="false" aria-controls="earlierWork">
+                                    <i class="bi bi-chevron-right me-1"></i> Earlier academic work
+                                </button>
+                                <div class="collapse mt-3" id="earlierWork">
+                                    <div class="card shadow-sm border-0 rounded-4 mb-3">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bolder mb-1">ArcGIS Mapping &mdash; 2018</h5>
+                                            <p class="text-muted mb-0">LSU undergraduate capstone: ingested federal data and manipulated a global latitude/longitude map. <a href="gis_project/index.html">View the embedded portfolio &rarr;</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow-sm border-0 rounded-4 mb-3">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bolder mb-1">HHL Quantum Algorithm</h5>
+                                            <p class="text-muted mb-0">A walkthrough of the Harrow&ndash;Hassidim&ndash;Lloyd quantum algorithm built during graduate study. <a href="https://colab.research.google.com/drive/199z0g7id4rMEpiBnszfgtSerEJk9s_jf?usp=sharing" target="_blank" rel="noopener">Open in Colab &rarr;</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow-sm border-0 rounded-4 mb-3">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bolder mb-1">Vagrant + Ansible Pub/Sub</h5>
+                                            <p class="text-muted mb-0">An automated pub/sub system on AWS using Vagrant and Ansible, with emphasis on automated instance generation rather than the messaging itself. <a href="https://github.com/mmered8/Vagrant-workspace" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -101,13 +256,9 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0">&copy; 2026 Mason Locke Meredith</div></div>
                     <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
+                        <em class="small text-muted">"Whatever you do, work at it with all your heart, as working for the Lord." &mdash; Colossians 3:23</em>
                     </div>
                 </div>
             </div>
@@ -115,6 +266,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js?v=2"></script>
     </body>
 </html>

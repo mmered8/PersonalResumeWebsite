@@ -1,0 +1,592 @@
+/* ==============================================================
+   Mason Locke Meredith — Personal Site
+   Visual system: "Front Porch"
+   --------------------------------------------------------------
+   A confident, calm aesthetic that pairs the discipline of
+   naval engineering with the warmth of a Louisiana family home.
+   Cream paper. Deep navy. Brass accents at golden hour.
+   Fraunces serif on Plus Jakarta Sans. Restrained motion.
+   Generous space.
+
+   This file loads AFTER css/styles.css and overrides Bootstrap
+   tokens + theme defaults. Do not touch styles.css directly.
+   ============================================================== */
+
+
+/* ==============================================================
+   1. DESIGN TOKENS
+   ============================================================== */
+:root {
+    /* --- Surfaces --- */
+    --color-bg:          #F7F1E3;        /* warm cream, like aged paper */
+    --color-bg-alt:      #EFE6D2;        /* deeper cream for section banding */
+    --color-bg-card:     #FBF6EB;        /* slightly lighter than bg for elevated surfaces */
+
+    /* --- Ink --- */
+    --color-ink:         #1F1B17;        /* warm near-black for body text */
+    --color-ink-muted:   #5A5247;        /* taupe for secondary text */
+    --color-ink-soft:    #8A7E6B;        /* lighter muted */
+
+    /* --- Brand --- */
+    --color-primary:     #1A2E48;        /* deep navy */
+    --color-primary-2:   #2E4A6B;        /* lighter navy for gradients */
+    --color-accent:      #B8743A;        /* warm copper / antique brass */
+    --color-accent-2:    #D4A574;        /* lighter brass */
+    --color-brick:       #A24B36;        /* soft southern brick */
+
+    /* --- Decorative --- */
+    --color-border:      #E4D8C2;        /* hairline borders that match the cream */
+    --color-rule:        rgba(26, 46, 72, 0.12);
+
+    /* --- Typography --- */
+    --font-display:      'Fraunces', 'Source Serif 4', Georgia, serif;
+    --font-body:         'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --font-mono:         'JetBrains Mono', 'IBM Plex Mono', SFMono-Regular, Menlo, Consolas, monospace;
+
+    /* --- Type scale + rhythm --- */
+    --leading-tight:     1.15;
+    --leading-snug:      1.35;
+    --leading-normal:    1.65;
+    --tracking-tight:   -0.02em;
+    --tracking-display: -0.015em;
+
+    /* --- Motion --- */
+    --ease-soft:         cubic-bezier(.22, .61, .36, 1);
+    --ease-out:          cubic-bezier(.16, .84, .44, 1);
+    --motion-fast:       180ms;
+    --motion-base:       320ms;
+    --motion-slow:       600ms;
+
+    /* --- Bootstrap variable overrides ---
+       These flow into Bootstrap's own utility classes (.bg-primary, .text-primary,
+       button colors, focus rings, etc.) so we don't have to redefine each one. */
+    --bs-primary:               var(--color-primary);
+    --bs-primary-rgb:           26, 46, 72;
+    --bs-secondary:             var(--color-accent);
+    --bs-secondary-rgb:         184, 116, 58;
+    --bs-body-bg:               var(--color-bg);
+    --bs-body-color:            var(--color-ink);
+    --bs-body-font-family:      var(--font-body);
+    --bs-link-color:            var(--color-accent);
+    --bs-link-hover-color:      var(--color-brick);
+    --bs-border-color:          var(--color-border);
+}
+
+/* Honor user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* ==============================================================
+   2. BASE — body, background, typography
+   ============================================================== */
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;                 /* ~17px — slightly larger than default for readability */
+    line-height: var(--leading-normal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Two soft radial washes give the page analog warmth without
+       overpowering content — like late-afternoon light through curtains. */
+    background-image:
+        radial-gradient(at 12% 0%,   rgba(212, 165, 116, 0.10), transparent 55%),
+        radial-gradient(at 100% 100%, rgba(26, 46, 72, 0.05),   transparent 60%);
+    background-attachment: fixed;
+}
+
+/* Soften Bootstrap's .bg-light to our cream banding */
+.bg-light {
+    background-color: var(--color-bg-alt) !important;
+}
+
+/* Display headings — Fraunces variable font.
+   font-variation-settings: SOFT controls the softness of corners,
+   opsz selects the optical size cut, WONK adds calligraphic quirks. */
+h1, h2, h3,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: var(--font-display);
+    font-weight: 540;
+    letter-spacing: var(--tracking-display);
+    line-height: var(--leading-tight);
+    color: var(--color-ink);
+    font-variation-settings: "SOFT" 30, "WONK" 0, "opsz" 144;
+}
+
+h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    line-height: var(--leading-snug);
+}
+
+.fw-bolder, .fw-bold {
+    font-weight: 640 !important;
+}
+
+strong { font-weight: 640; color: var(--color-ink); }
+em     { font-style: italic; }
+
+/* When italics appear in display sizes, lean into Fraunces' calligraphic axis */
+.display-3 em, .display-4 em, .display-5 em, h1 em, h2 em {
+    font-variation-settings: "SOFT" 100, "WONK" 1;
+}
+
+/* .text-gradient — repurposed. Original was purple→pink; new is brass→navy.
+   Used on the hero head, the page section labels, and "About Me". */
+.text-gradient {
+    background: linear-gradient(120deg, var(--color-accent) 0%, var(--color-primary) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+::selection {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color var(--motion-fast) var(--ease-soft);
+}
+a:hover, a:focus { color: var(--color-brick); }
+
+
+/* ==============================================================
+   3. NAVIGATION
+   ============================================================== */
+.navbar.navbar-light {
+    background-color: rgba(247, 241, 227, 0.85) !important;
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid var(--color-rule);
+}
+
+.navbar-brand {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+    font-weight: 600;
+}
+.navbar-brand .text-primary {
+    color: var(--color-primary) !important;
+    font-variation-settings: "SOFT" 50, "opsz" 28;
+}
+
+/* Nav links: small-caps style with an animated brass underline */
+.navbar-nav .nav-link {
+    position: relative;
+    color: var(--color-ink) !important;
+    font-family: var(--font-body);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.78rem !important;
+    padding: 0.5rem 1rem !important;
+    transition: color var(--motion-fast) var(--ease-soft);
+}
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.35rem;
+    height: 1px;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform var(--motion-base) var(--ease-out);
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus { color: var(--color-primary) !important; }
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after,
+.navbar-nav .nav-link.active::after { transform: scaleX(1); }
+
+
+/* ==============================================================
+   4. HERO + HEADER
+   ============================================================== */
+header.py-5 {
+    padding-top: 5rem !important;
+    padding-bottom: 4rem !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle copper rule under the hero — like a chapter break */
+header.py-5::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: var(--color-accent);
+    margin: 2rem auto 0;
+    opacity: 0.55;
+}
+
+/* Hero kicker badge — outline pill, not a solid gradient */
+.badge.bg-gradient-primary-to-secondary {
+    background: transparent !important;
+    color: var(--color-accent) !important;
+    border: 1px solid var(--color-accent);
+    font-family: var(--font-body);
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 0.55rem 1rem !important;
+    border-radius: 999px;
+}
+.badge.bg-gradient-primary-to-secondary .text-uppercase {
+    color: var(--color-accent) !important;
+}
+
+/* Hero display: large, optically tuned. Capped so longer headlines
+   ("Building thoughtful systems for the people who depend on them.")
+   don't collapse to one word per line in a narrow column. */
+.display-3 {
+    font-size: clamp(2.25rem, 4.2vw, 3.35rem);
+    font-weight: 480;
+    letter-spacing: -0.025em;
+    font-variation-settings: "SOFT" 50, "opsz" 96;
+    text-wrap: balance;
+}
+
+/* Hero subhead "Hi, I'm Mason —" — Fraunces italic, gentle */
+.fs-3.fw-light {
+    font-family: var(--font-display);
+    font-style: italic;
+    color: var(--color-ink-muted) !important;
+    font-weight: 400;
+    font-variation-settings: "SOFT" 100;
+}
+
+/* The four SVG dot decorations behind the profile photo — desaturate to brass */
+.dots-1 svg path, .dots-2 svg path,
+.dots-3 svg path, .dots-4 svg path {
+    fill: rgba(184, 116, 58, 0.22);
+}
+
+/* Profile photo halo: navy → brass instead of purple → pink */
+.profile.bg-gradient-primary-to-secondary {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%) !important;
+}
+
+
+/* ==============================================================
+   5. BUTTONS
+   ============================================================== */
+.btn {
+    font-family: var(--font-body);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-radius: 999px;
+    transition: transform var(--motion-fast) var(--ease-soft),
+                background-color var(--motion-fast) var(--ease-soft),
+                color var(--motion-fast) var(--ease-soft),
+                box-shadow var(--motion-base) var(--ease-soft);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg);
+    box-shadow: 0 1px 0 rgba(26, 46, 72, 0.08);
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+    color: var(--color-bg);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px -10px rgba(26, 46, 72, 0.45);
+}
+
+.btn-outline-dark {
+    border-color: var(--color-ink);
+    color: var(--color-ink);
+    background: transparent;
+}
+.btn-outline-dark:hover, .btn-outline-dark:focus {
+    background: var(--color-ink);
+    color: var(--color-bg);
+    transform: translateY(-1px);
+}
+
+.btn-outline-primary {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.btn-outline-secondary {
+    border-color: var(--color-ink-muted);
+    color: var(--color-ink-muted);
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+    background: var(--color-ink);
+    color: var(--color-bg);
+    border-color: var(--color-ink);
+}
+
+.btn-outline-light {
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+.btn-outline-light:hover, .btn-outline-light:focus {
+    background: var(--color-bg);
+    color: var(--color-primary);
+    border-color: var(--color-bg);
+}
+
+.btn-lg { padding: 0.95rem 2.25rem !important; font-size: 0.95rem !important; }
+.btn-sm { font-size: 0.78rem !important; padding: 0.4rem 0.9rem !important; }
+
+
+/* ==============================================================
+   6. CARDS — used heavily for experience, education, projects
+   ============================================================== */
+.card.shadow, .card.shadow-sm {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border) !important;
+    box-shadow: 0 1px 0 rgba(26, 46, 72, 0.04),
+                0 10px 30px -20px rgba(26, 46, 72, 0.12) !important;
+    transition: transform var(--motion-base) var(--ease-soft),
+                box-shadow var(--motion-base) var(--ease-soft),
+                border-color var(--motion-base) var(--ease-soft);
+}
+
+.card.shadow:hover, .card.shadow-sm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 0 rgba(26, 46, 72, 0.04),
+                0 24px 50px -28px rgba(26, 46, 72, 0.28) !important;
+    border-color: rgba(184, 116, 58, 0.35) !important;
+}
+
+/* Inner ".bg-light" boxes (date/role meta on experience + education cards) */
+.card .bg-light {
+    background-color: var(--color-bg-alt) !important;
+    border-radius: 0.75rem;
+}
+
+/* Reformat the "July 2020 — Present" line as a small all-caps eyebrow in brass */
+.card .bg-light .text-primary,
+.card .bg-light .text-secondary {
+    color: var(--color-accent) !important;
+    font-family: var(--font-body);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+}
+
+/* Role / school names use Fraunces so they read like a printed CV */
+.card .bg-light .small.fw-bolder {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--color-ink);
+    font-size: 1.05rem !important;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+/* Bullet styling: brass markers + breathing room */
+.card ul {
+    padding-left: 1.1rem;
+    margin-bottom: 0;
+}
+.card ul li {
+    margin-bottom: 0.5rem;
+    color: var(--color-ink);
+    line-height: 1.55;
+}
+.card ul li::marker {
+    color: var(--color-accent);
+}
+
+
+/* ==============================================================
+   7. BADGES / TECH STACK CHIPS
+   ============================================================== */
+.badge.bg-light.text-dark {
+    background-color: transparent !important;
+    color: var(--color-primary) !important;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    padding: 0.4rem 0.75rem !important;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.72rem;
+    letter-spacing: 0.01em;
+    transition: background-color var(--motion-fast) var(--ease-soft),
+                border-color var(--motion-fast) var(--ease-soft);
+}
+.badge.bg-light.text-dark:hover {
+    background-color: rgba(184, 116, 58, 0.08) !important;
+    border-color: var(--color-accent);
+}
+
+
+/* ==============================================================
+   8. FEATURE ICON (inline skill icons + contact header)
+   --------------------------------------------------------------
+   Keeps Bootstrap's default 3rem footprint; just changes colors.
+   Used both inline on resume.html (Skills section) and centered
+   on contact.html (envelope).
+   ============================================================== */
+.feature.bg-gradient-primary-to-secondary {
+    background: var(--color-primary) !important;
+    color: var(--color-accent-2) !important;
+    box-shadow: 0 8px 22px -14px rgba(26, 46, 72, 0.45);
+}
+
+
+/* ==============================================================
+   9. CALL-TO-ACTION BAND (projects.html "Let's build something")
+   ============================================================== */
+section.bg-gradient-primary-to-secondary {
+    background: var(--color-primary) !important;
+    color: var(--color-bg) !important;
+    position: relative;
+    overflow: hidden;
+}
+section.bg-gradient-primary-to-secondary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(at 20% 30%, rgba(184, 116, 58, 0.30), transparent 50%),
+        radial-gradient(at 80% 80%, rgba(212, 165, 116, 0.18), transparent 50%);
+    pointer-events: none;
+}
+section.bg-gradient-primary-to-secondary > * { position: relative; }
+section.bg-gradient-primary-to-secondary .display-4 {
+    font-family: var(--font-display);
+    color: var(--color-bg);
+    font-weight: 480;
+}
+
+
+/* ==============================================================
+   10. FORMS — contact
+   ============================================================== */
+.form-floating > .form-control {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 0.6rem;
+    color: var(--color-ink);
+    font-family: var(--font-body);
+}
+.form-floating > .form-control:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(184, 116, 58, 0.15);
+    background-color: var(--color-bg);
+}
+.form-floating > label {
+    color: var(--color-ink-muted);
+}
+
+
+/* ==============================================================
+   11. FOOTER
+   ============================================================== */
+footer.bg-white {
+    background-color: var(--color-bg) !important;
+    border-top: 1px solid var(--color-rule);
+}
+footer .small {
+    color: var(--color-ink-muted);
+    font-family: var(--font-body);
+}
+footer em {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-ink-muted) !important;
+    font-variation-settings: "SOFT" 100;
+}
+
+
+/* ==============================================================
+   12. COLLAPSIBLE "EARLIER WORK" — chevron rotation
+   ============================================================== */
+[data-bs-toggle="collapse"] {
+    color: var(--color-ink-muted) !important;
+}
+[data-bs-toggle="collapse"] .bi-chevron-right {
+    transition: transform var(--motion-base) var(--ease-soft);
+    display: inline-block;
+}
+[data-bs-toggle="collapse"][aria-expanded="true"] .bi-chevron-right {
+    transform: rotate(90deg);
+}
+
+
+/* ==============================================================
+   13. SIGNATURE ORNAMENT
+   --------------------------------------------------------------
+   A small brass diamond sits under each page H1 like a chapter
+   divider in a hymnal. It's the one thing visitors should remember.
+   ============================================================== */
+.container .text-center.mb-5 h1.display-5::after {
+    content: "◆";
+    display: block;
+    color: var(--color-accent);
+    font-size: 0.6rem;
+    margin-top: 1.1rem;
+    opacity: 0.7;
+}
+
+
+/* ==============================================================
+   14. ENTRANCE MOTION
+   --------------------------------------------------------------
+   One quiet fade-up on first paint for hero + cards.
+   Cards stagger slightly via nth-of-type so the page reveals
+   itself rather than slamming all at once.
+   ============================================================== */
+@keyframes mlm-fade-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+header.py-5 .col-xxl-5 > .text-center,
+header.py-5 .col-xxl-7 > .d-flex,
+.container .text-center.mb-5 {
+    animation: mlm-fade-up 700ms var(--ease-out) both;
+}
+
+.card.shadow, .card.shadow-sm {
+    animation: mlm-fade-up 600ms var(--ease-out) both;
+    animation-delay: 80ms;
+}
+.card.shadow:nth-of-type(2),  .card.shadow-sm:nth-of-type(2)  { animation-delay: 140ms; }
+.card.shadow:nth-of-type(3),  .card.shadow-sm:nth-of-type(3)  { animation-delay: 200ms; }
+.card.shadow:nth-of-type(4),  .card.shadow-sm:nth-of-type(4)  { animation-delay: 260ms; }
+
+
+/* ==============================================================
+   15. RESPONSIVE TUNING
+   ============================================================== */
+@media (max-width: 768px) {
+    body { font-size: 1rem; }
+    .display-3 { font-size: 2.4rem; }
+    .display-5 { font-size: 2rem; }
+    header.py-5 { padding-top: 3rem !important; padding-bottom: 2rem !important; }
+    .navbar-nav .nav-link::after { display: none; }
+}

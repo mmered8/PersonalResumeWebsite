@@ -1,0 +1,10 @@
+# Playwright + local verification artifacts
+.playwright-mcp/
+*.png
+!assets/*.png
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.gstack/

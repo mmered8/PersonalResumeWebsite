@@ -47,11 +47,12 @@ function handleSubmit(event) {
     });
 }
 
-// Attach the event listener to the form
-document.getElementById('contactForm').addEventListener('submit', handleSubmit);
-
-// To hide error messages when the user starts typing again
-document.getElementById('contactForm').addEventListener('input', function(event) {
-    var feedbackElements = document.getElementsByClassName('invalid-feedback');
-    Array.from(feedbackElements).forEach(el => el.classList.add('d-none'));
-});
+// Attach the event listeners only on the contact page where the form exists
+var contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', handleSubmit);
+    contactForm.addEventListener('input', function(event) {
+        var feedbackElements = document.getElementsByClassName('invalid-feedback');
+        Array.from(feedbackElements).forEach(el => el.classList.add('d-none'));
+    });
+}
