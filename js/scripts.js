@@ -1,3 +1,7 @@
+// Contact form backend — a Cloudflare Worker that emails submissions.
+// Source lives in worker/contact-form.js.
+var CONTACT_ENDPOINT = 'https://masonmeredith-contact.mason-mere.workers.dev/';
+
 function handleSubmit(event) {
     event.preventDefault(); // Prevent default form submission
 
@@ -6,44 +10,54 @@ function handleSubmit(event) {
     var emailValue = document.getElementById('email').value;
     var numberValue = document.getElementById('phone').value;
     var messageValue = document.getElementById('message').value;
+    var companyValue = (document.getElementById('company') || {}).value || ''; // honeypot
+
+    var successEl = document.getElementById('submitSuccessMessage');
+    var errorEl = document.getElementById('submitErrorMessage');
+    var button = document.getElementById('submitButton');
+
+    // Clear any prior result message
+    successEl.classList.add('d-none');
+    errorEl.classList.add('d-none');
 
     // Validation
     if (!nameValue || !emailValue || !numberValue || !messageValue) {
         console.error('Validation Failed: Missing one or more fields');
-        document.getElementById('submitErrorMessage').classList.remove('d-none');
+        errorEl.classList.remove('d-none');
         return; // Stop the function if validation fails
     }
 
-    // Assuming validation passes, construct the data object
-    const data = {
+    var data = {
         name: nameValue,
         email: emailValue,
         number: numberValue,
-        message: messageValue
+        message: messageValue,
+        company: companyValue
     };
 
-    console.log("Sending data:", JSON.stringify(data));
+    button.disabled = true;
 
-    // Fetch request to your API
-    fetch('https://hqqehdq4jb.execute-api.us-east-2.amazonaws.com/FormAPI/', {
+    fetch(CONTACT_ENDPOINT, {
         method: 'POST',
         body: JSON.stringify(data),
-        headers: {'Content-Type': 'application/json'}
+        headers: { 'Content-Type': 'application/json' }
     })
-    .then(response => {
-        console.log('Received response:', response); // Log the raw response
+    .then(function (response) {
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error('Request failed with status ' + response.status);
         }
         return response.json();
     })
-    .then(responseData => {
-        console.log('Response data:', responseData); // Log the response data
-        document.getElementById('submitSuccessMessage').classList.remove('d-none');
+    .then(function () {
+        successEl.classList.remove('d-none');
+        document.getElementById('contactForm').reset();
     })
-    .catch(error => {
-        console.error('Error:', error);
-        document.getElementById('submitErrorMessage').classList.remove('d-none');
+    .catch(function (error) {
+        console.error('Contact form error:', error);
+        errorEl.classList.remove('d-none');
+    })
+    .finally(function () {
+        button.disabled = false;
     });
 }
 

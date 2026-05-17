@@ -1,0 +1,11 @@
+# Cloudflare Worker config for the masonmeredith.com contact form.
+# Deploy with:  wrangler deploy   (run from the worker/ directory)
+name = "masonmeredith-contact"
+main = "contact-form.js"
+compatibility_date = "2025-01-01"
+
+# Cloudflare Email Service binding. The Worker calls env.CONTACT_EMAIL.send({...}).
+# Requires masonmeredith.com to be onboarded to Email Sending (verified sender domain).
+[[send_email]]
+name = "CONTACT_EMAIL"
+remote = true
