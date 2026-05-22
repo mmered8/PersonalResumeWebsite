@@ -273,13 +273,21 @@ header.py-5::after {
     font-variation-settings: "SOFT" 100;
 }
 
-/* Hero photo — a framed coastal portrait, not a cutout.
+/* Hero photo — a framed studio portrait, not a cutout.
    The .profile box becomes a navy→brass accent block; the photo sits
    on top, shifted up-and-left so the gradient peeks out at the
-   bottom-right like a deliberate offset frame. */
+   bottom-right like a deliberate offset frame.
+   The frame is portrait-aspect (matches the source image) so the full
+   composition — bookshelf, desk, folded-arms pose — is visible. */
 .profile.bg-gradient-primary-to-secondary {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%) !important;
     overflow: visible;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1281 / 1718;
+    max-width: 28rem;
+    max-height: none;
+    margin-inline: auto;
 }
 .profile-img {
     position: absolute;
