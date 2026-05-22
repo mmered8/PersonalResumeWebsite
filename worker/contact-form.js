@@ -70,7 +70,7 @@ export default {
       // during setup — safe to trim later once delivery is confirmed.
       return reply(
         {
-          error: "The message could not be sent. Please email mason.mere@gmail.com directly.",
+          error: "The message could not be sent. Please try again in a moment.",
           detail: String((err && err.message) || err),
         },
         502,
