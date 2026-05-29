@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "domain-mcp": {
+      "command": "uv",
+      "args": ["run", "python", "-m", "domain_mcp.server"],
+      "cwd": "c:\\Users\\mason\\OneDrive\\Documents\\GitHub\\domain_mcp"
+    }
+  }
+}
