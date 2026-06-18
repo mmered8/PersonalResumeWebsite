@@ -2,8 +2,7 @@
   "mcpServers": {
     "domain-mcp": {
       "command": "uv",
-      "args": ["run", "python", "-m", "domain_mcp.server"],
-      "cwd": "c:\\Users\\mason\\OneDrive\\Documents\\GitHub\\domain_mcp"
+      "args": ["run", "--directory", "${WORKSPACE_ROOT}/domain_mcp", "python", "-m", "domain_mcp.server"]
     }
   }
 }
