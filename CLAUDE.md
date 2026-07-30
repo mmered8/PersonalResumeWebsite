@@ -1,3 +1,7 @@
+> **📍 Workspace relocated to `C:\GitHub` (out of OneDrive) — 2026-06-21.**
+> Repos now live at `C:\GitHub\<tier>\<repo>` with `WORKSPACE_ROOT=C:\GitHub`. The old
+> `C:\Users\mason\OneDrive\Documents\GitHub` path is retired — reference paths via
+> `WORKSPACE_ROOT` / repo-relative, never the OneDrive path.
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -8,14 +12,7 @@ A static personal resume / portfolio site for Mason Locke Meredith, deployed via
 
 **Purpose:** This is meant to be a virtual resume / business card — a single shareable URL that conveys who Mason is, what he's worked on, and how to reach him. Keep edits aligned with that goal: prioritize clarity, professionalism, and a fast first impression over feature creep.
 
-## Workspace Philosophy: Lean by Default
-
-A deliberate principle across this workspace — surface it before any add or refactor.
-
-- **Delete is the default before adding.** Always ask first whether something can be removed instead of added.
-- **If adding, add as lean as possible.** Smallest viable change. No speculative scaffolding, no parallel implementations.
-- **Adding is dangerous.** New code, new branches, and new files can break the system or fragment the codebase across this multi-repo workspace. Branch and code drift is the failure mode we are actively avoiding.
-- **Don't lose track of what you add.** If it's worth adding, it's worth knowing where it lives.
+> **Workspace Philosophy (Lean by Default)** and **Pathing Policy (Portable Paths)** live in the root [`CLAUDE.md`](../../CLAUDE.md) — auto-loaded every session; not repeated here.
 
 ## Stack
 
@@ -60,15 +57,3 @@ No server is required — open the HTML files directly in a browser, or use any 
 - The navbar is duplicated across `index.html`, `resume.html`, `projects.html`, `contact.html`. When adding/renaming a page, update all four.
 - Asset paths are relative (`assets/...`, `css/...`, `js/...`) — keep them that way so GitHub Pages serves them correctly under both the apex domain and any preview URL.
 - `css/styles.css` is the vendored compiled Bootstrap — treat it as read-only. Put new rules in `css/site.css`, which is loaded after it and is intended as the override layer.
-
-## Pathing Policy — No Absolute Paths (workspace standard)
-
-Never hardcode absolute paths (`C:\Users\...`, `/mnt/c/...`, `/Users/...`). All
-references — in code, configs (`.mcp.json`, hooks), scripts, and docs — must use:
-- paths relative to the repo or current file, or
-- the `WORKSPACE_ROOT` environment variable for cross-repo references, or
-- env vars / installed entry points (console scripts) for tools.
-
-Absolute paths are how this workspace got tangled; keeping them out keeps every repo
-portable and the workspace reorganizable. The only sanctioned exception is Windows Task
-Scheduler actions (an OS constraint) — keep those centralized and minimal.

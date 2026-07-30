@@ -2,7 +2,7 @@
   "mcpServers": {
     "domain-mcp": {
       "command": "uv",
-      "args": ["run", "--directory", "${WORKSPACE_ROOT}/domain_mcp", "python", "-m", "domain_mcp.server"]
+      "args": ["run", "--directory", "${WORKSPACE_ROOT}/platform/domain_mcp", "python", "-m", "domain_mcp.server"]
     }
   }
 }

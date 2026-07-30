@@ -1,0 +1,12 @@
+{
+  "env": {
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_BUG_COMMAND": "1",
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0"
+  },
+  "disableArtifact": true,
+  "feedbackDrafts": "off",
+  "feedbackSurveyRate": 0,
+  "autoUploadSessions": false
+}
